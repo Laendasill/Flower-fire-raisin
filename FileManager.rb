@@ -2,7 +2,7 @@
 
 # License::   MIT licence
 
-# FileManager - module for more efficient folder operations
+# FileManager - module for folder and files operations app folder operations
 
 module FileManager
   # FOLDER - array containig current files and folders for future use
