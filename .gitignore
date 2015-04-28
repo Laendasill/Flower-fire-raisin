@@ -1,2 +1,1 @@
-\webroot\scripts\bower_components
-
+.\webroot\scripts\bower_components\*
