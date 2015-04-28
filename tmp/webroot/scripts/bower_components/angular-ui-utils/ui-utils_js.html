@@ -1,0 +1,3227 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>ui-utils.js - RDoc Documentation</title>
+
+<link href="../../../../fonts.css" rel="stylesheet">
+<link href="../../../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../../";
+</script>
+
+<script src="../../../../js/jquery.js"></script>
+<script src="../../../../js/navigation.js"></script>
+<script src="../../../../js/search_index.js"></script>
+<script src="../../../../js/search.js"></script>
+<script src="../../../../js/searcher.js"></script>
+<script src="../../../../js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../../webroot/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../webroot/index_html.html">index.html</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui-utils/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui-utils/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui-utils/ui-utils-ieshiv_js.html">ui-utils-ieshiv.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui-utils/ui-utils-ieshiv_min_js.html">ui-utils-ieshiv.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui-utils/ui-utils_js.html">ui-utils.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui-utils/ui-utils_min_js.html">ui-utils.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/build/angular-ui-ieshiv_js.html">angular-ui-ieshiv.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/build/angular-ui-ieshiv_min_js.html">angular-ui-ieshiv.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/build/angular-ui_css.html">angular-ui.css</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/build/angular-ui_js.html">angular-ui.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/build/angular-ui_min_css.html">angular-ui.min.css</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/build/angular-ui_min_js.html">angular-ui.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/common/ieshiv/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/common/ieshiv/ieshiv_js.html">ieshiv.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/common/module_js.html">module.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/common/stylesheets/angular-ui_less.html">angular-ui.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/common/stylesheets/mixins_less.html">mixins.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/grunt_js.html">grunt.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/animate/animate_js.html">animate.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/animate/test/animateSpec_js.html">animateSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/calendar/calendar_js.html">calendar.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/calendar/dependencies_json.html">dependencies.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/calendar/test/calendarSpec_js.html">calendarSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/codemirror/codemirror_js.html">codemirror.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/codemirror/dependencies_json.html">dependencies.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/codemirror/test/codemirrorSpec_js.html">codemirrorSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/currency/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/currency/currency_js.html">currency.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/currency/stylesheets/currency_less.html">currency.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/currency/test/currencySpec_js.html">currencySpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/date/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/date/date_js.html">date.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/date/dependencies_json.html">dependencies.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/date/test/dateSpec_js.html">dateSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/event/event_js.html">event.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/event/test/eventSpec_js.html">eventSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/if/if_js.html">if.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/if/test/ifSpec_js.html">ifSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/jq/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/jq/jq_js.html">jq.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/jq/test/jqSpec_js.html">jqSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/keypress/keypress_js.html">keypress.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/keypress/test/keydownSpec_js.html">keydownSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/keypress/test/keypressSpec_js.html">keypressSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/keypress/test/keyupSpec_js.html">keyupSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/map/map_js.html">map.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/map/test/mapSpec_js.html">mapSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/mask/dependencies_json.html">dependencies.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/mask/mask_js.html">mask.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/mask/test/maskSpec_js.html">maskSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/reset/reset_js.html">reset.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/reset/stylesheets/reset_less.html">reset.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/reset/test/resetSpec_js.html">resetSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/route/route_js.html">route.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/route/test/routeSpec_js.html">routeSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/scrollfix/scrollfix_js.html">scrollfix.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/scrollfix/test/scrollfixSpec_js.html">scrollfixSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/select2/dependencies_json.html">dependencies.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/select2/select2_js.html">select2.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/select2/test/select2Spec_js.html">select2Spec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/showhide/showhide_js.html">showhide.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/showhide/test/showhideSpec_js.html">showhideSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/sortable/REDME_md.html">REDME</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/sortable/sortable_js.html">sortable.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/sortable/test/sortableSpec_js.html">sortableSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/tinymce/dependencies_json.html">dependencies.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/tinymce/test/tinymceSpec_js.html">tinymceSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/tinymce/tinymce_js.html">tinymce.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/validate/test/validateSpec_js.html">validateSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/directives/validate/validate_js.html">validate.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/format/format_js.html">format.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/format/test/formatSpec_js.html">formatSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/highlight/highlight_js.html">highlight.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/highlight/highlight_less.html">highlight.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/highlight/test/highlightSpec_js.html">highlightSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/inflector/inflector_js.html">inflector.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/inflector/test/inflectorSpec_js.html">inflectorSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/unique/test/uniqueSpec_js.html">uniqueSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/modules/filters/unique/unique_js.html">unique.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/package_json.html">package.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/templates/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/templates/dependencies_json.html">dependencies.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/templates/stylesheets/template_less.html">template.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/templates/template_js.html">template.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/templates/test/templateSpec_js.html">templateSpec.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/angular-1_0_1/angular-mocks_js.html">angular-mocks.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/angular-1_0_1/angular_js.html">angular.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/angular/angular-1_0_0rc4_js.html">angular-1.0.0rc4.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/angular/angular-1_0_0rc5_js.html">angular-1.0.0rc5.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/angular/angular-mocks_js.html">angular-mocks.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/bootstrap/bootstrap-modal_js.html">bootstrap-modal.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/calendar/calendar_js_min.html">calendar.js.min</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/codemirror/codemirror_js.html">codemirror.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/googlemaps/googlemaps_js.html">googlemaps.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/jquery/jquery-1_7_2_js.html">jquery-1.7.2.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/jquery/jquery-ui-1_8_18_js.html">jquery-ui-1.8.18.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/maskedinput/jquery_maskedinput-1_3_js.html">jquery.maskedinput-1.3.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/select2/select2_js.html">select2.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/tinymce/jquery_tinymce_js.html">jquery.tinymce.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/lib/tinymce/tiny_mce_js.html">tiny_mce.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular-ui/test/test-config_js.html">test-config.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/angular-csp_css.html">angular-csp.css</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/angular_js.html">angular.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/angular_min_js.html">angular.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/angular_min_js_map.html">angular.min.js.map</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/index_js.html">index.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/angular/package_json.html">package.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/Gruntfile_js.html">Gruntfile.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/README_md.html">README</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/dist/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/grunt/bs-commonjs-generator_js.html">bs-commonjs-generator.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/grunt/bs-glyphicons-data-generator_js.html">bs-glyphicons-data-generator.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/grunt/bs-lessdoc-parser_js.html">bs-lessdoc-parser.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/grunt/bs-raw-files-generator_js.html">bs-raw-files-generator.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/grunt/configBridge_json.html">configBridge.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/affix_js.html">affix.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/alert_js.html">alert.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/button_js.html">button.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/carousel_js.html">carousel.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/collapse_js.html">collapse.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/dropdown_js.html">dropdown.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/modal_js.html">modal.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/popover_js.html">popover.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/scrollspy_js.html">scrollspy.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/tab_js.html">tab.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/tooltip_js.html">tooltip.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/js/transition_js.html">transition.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/badges_less.html">badges.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/bootstrap_less.html">bootstrap.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/breadcrumbs_less.html">breadcrumbs.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/button-groups_less.html">button-groups.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/carousel_less.html">carousel.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/close_less.html">close.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/code_less.html">code.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/component-animations_less.html">component-animations.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/dropdowns_less.html">dropdowns.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/glyphicons_less.html">glyphicons.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/input-groups_less.html">input-groups.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/jumbotron_less.html">jumbotron.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/media_less.html">media.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins_less.html">mixins.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/background-variant_less.html">background-variant.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/border-radius_less.html">border-radius.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/center-block_less.html">center-block.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/clearfix_less.html">clearfix.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/gradients_less.html">gradients.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/grid-framework_less.html">grid-framework.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/hide-text_less.html">hide-text.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/image_less.html">image.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/nav-divider_less.html">nav-divider.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/nav-vertical-align_less.html">nav-vertical-align.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/opacity_less.html">opacity.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/progress-bar_less.html">progress-bar.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/reset-filter_less.html">reset-filter.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/resize_less.html">resize.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/responsive-visibility_less.html">responsive-visibility.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/size_less.html">size.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/tab-focus_less.html">tab-focus.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/table-row_less.html">table-row.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/text-emphasis_less.html">text-emphasis.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/text-overflow_less.html">text-overflow.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/mixins/vendor-prefixes_less.html">vendor-prefixes.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/modals_less.html">modals.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/navbar_less.html">navbar.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/navs_less.html">navs.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/normalize_less.html">normalize.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/pager_less.html">pager.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/popovers_less.html">popovers.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/print_less.html">print.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/progress-bars_less.html">progress-bars.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/responsive-embed_less.html">responsive-embed.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/responsive-utilities_less.html">responsive-utilities.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/scaffolding_less.html">scaffolding.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/tables_less.html">tables.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/theme_less.html">theme.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/thumbnails_less.html">thumbnails.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/tooltip_less.html">tooltip.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/type_less.html">type.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/utilities_less.html">utilities.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/variables_less.html">variables.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/less/wells_less.html">wells.less</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/package_js.html">package.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/bootstrap/package_json.html">package.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/MIT-LICENSE_txt.html">MIT-LICENSE</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/dist/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/dist/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/dist/jquery_min_map.html">jquery.min.map</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/jsonp_js.html">jsonp.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/load_js.html">load.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/parseJSON_js.html">parseJSON.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/parseXML_js.html">parseXML.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/script_js.html">script.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/var/nonce_js.html">nonce.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/var/rquery_js.html">rquery.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/ajax/xhr_js.html">xhr.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/attributes_js.html">attributes.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/attributes/attr_js.html">attr.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/attributes/classes_js.html">classes.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/attributes/prop_js.html">prop.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/attributes/support_js.html">support.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/attributes/val_js.html">val.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/callbacks_js.html">callbacks.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/core_js.html">core.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/core/access_js.html">access.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/core/init_js.html">init.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/core/parseHTML_js.html">parseHTML.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/core/ready_js.html">ready.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/core/var/rsingleTag_js.html">rsingleTag.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css_js.html">css.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/addGetHookIf_js.html">addGetHookIf.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/curCSS_js.html">curCSS.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/defaultDisplay_js.html">defaultDisplay.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/hiddenVisibleSelectors_js.html">hiddenVisibleSelectors.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/support_js.html">support.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/swap_js.html">swap.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/var/cssExpand_js.html">cssExpand.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/var/getStyles_js.html">getStyles.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/var/isHidden_js.html">isHidden.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/var/rmargin_js.html">rmargin.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/css/var/rnumnonpx_js.html">rnumnonpx.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/data_js.html">data.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/data/Data_js.html">Data.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/data/accepts_js.html">accepts.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/data/var/data_priv_js.html">data_priv.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/data/var/data_user_js.html">data_user.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/deferred_js.html">deferred.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/deprecated_js.html">deprecated.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/dimensions_js.html">dimensions.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/effects_js.html">effects.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/effects/Tween_js.html">Tween.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/effects/animatedSelector_js.html">animatedSelector.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/event_js.html">event.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/event/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/event/alias_js.html">alias.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/event/support_js.html">support.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/exports/amd_js.html">amd.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/exports/global_js.html">global.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/intro_js.html">intro.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/manipulation_js.html">manipulation.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/manipulation/_evalUrl_js.html">_evalUrl.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/manipulation/support_js.html">support.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/manipulation/var/rcheckableType_js.html">rcheckableType.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/offset_js.html">offset.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/outro_js.html">outro.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/queue_js.html">queue.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/queue/delay_js.html">delay.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/selector-native_js.html">selector-native.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/selector-sizzle_js.html">selector-sizzle.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/selector_js.html">selector.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/serialize_js.html">serialize.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/sizzle/dist/sizzle_js.html">sizzle.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/sizzle/dist/sizzle_min_js.html">sizzle.min.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/sizzle/dist/sizzle_min_map.html">sizzle.min.map</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/traversing_js.html">traversing.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/traversing/findFilter_js.html">findFilter.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/traversing/var/rneedsContext_js.html">rneedsContext.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/arr_js.html">arr.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/class2type_js.html">class2type.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/concat_js.html">concat.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/hasOwn_js.html">hasOwn.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/indexOf_js.html">indexOf.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/pnum_js.html">pnum.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/push_js.html">push.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/rnotwhite_js.html">rnotwhite.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/slice_js.html">slice.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/strundefined_js.html">strundefined.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/support_js.html">support.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/var/toString_js.html">toString.js</a>
+  
+    <li><a href="../../../../webroot/scripts/bower_components/jquery/src/wrap_js.html">wrap.js</a>
+  
+    <li><a href="../../../../webroot/scripts/main_js.html">main.js</a>
+  
+    <li><a href="../../../../webroot/tmp_resp_rhtml.html">tmp_resp.rhtml</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page webroot/scripts/bower_components/angular-ui-utils/ui-utils.js">
+
+<pre>angular-ui-utils - Swiss-Army-Knife of AngularJS tools (with no external dependencies!)
+@version v0.2.3 - 2015-03-30
+@link http://angular-ui.github.com
+@license MIT License, http://www.opensource.org/licenses/MIT</pre>
+
+<p>angular.module(&#39;ui.alias&#39;, []).config([&#39;$compileProvider&#39;,
+&#39;uiAliasConfig&#39;, function($compileProvider, uiAliasConfig){</p>
+
+<pre>&#39;use strict&#39;;
+
+uiAliasConfig = uiAliasConfig || {};
+angular.forEach(uiAliasConfig, function(config, alias){
+  if (angular.isString(config)) {
+    config = {
+      replace: true,
+      template: config
+    };
+  }
+  $compileProvider.directive(alias, function(){
+    return config;
+  });
+});</pre>
+
+<p>}]);</p>
+
+<pre> General-purpose Event binding. Bind any event not natively supported by Angular
+ Pass an object with keynames for events to ui-event
+ Allows $event object and $params object to be passed
+
+ @example &lt;input ui-event=&quot;{ focus : &#39;counter++&#39;, blur : &#39;someCallback()&#39; }&quot;&gt;
+ @example &lt;input ui-event=&quot;{ myCustomEvent : &#39;myEventHandler($event, $params)&#39;}&quot;&gt;
+
+ @param ui-event {string|object literal} The event to bind to as a string or a hash of events with their callbacks
+/</pre>
+
+<p>angular.module(&#39;ui.event&#39;,[]).directive(&#39;uiEvent&#39;,
+[&#39;$parse&#39;,</p>
+
+<pre>function ($parse) {
+  &#39;use strict&#39;;
+
+  return function ($scope, elm, attrs) {
+    var events = $scope.$eval(attrs.uiEvent);
+    angular.forEach(events, function (uiEvent, eventName) {
+      var fn = $parse(uiEvent);
+      elm.bind(eventName, function (evt) {
+        var params = Array.prototype.slice.call(arguments);
+        //Take out first paramater (event object);
+        params = params.splice(1);
+        fn($scope, {$event: evt, $params: params});
+        if (!$scope.$$phase) {
+          $scope.$apply();
+        }
+      });
+    });
+  };
+}]);</pre>
+
+<p>/**</p>
+
+<pre> A replacement utility for internationalization very similar to sprintf.
+
+ @param replace {mixed} The tokens to replace depends on type
+  string: all instances of $0 will be replaced
+  array: each instance of $0, $1, $2 etc. will be placed with each array item in corresponding order
+  object: all attributes will be iterated through, with :key being replaced with its corresponding value
+ @return string
+
+ @example: &#39;Hello :name, how are you :day&#39;.format({ name:&#39;John&#39;, day:&#39;Today&#39; })
+ @example: &#39;Records $0 to $1 out of $2 total&#39;.format([&#39;10&#39;, &#39;20&#39;, &#39;3000&#39;])
+ @example: &#39;$0 agrees to all mentions $0 makes in the event that $0 hits a tree while $0 is driving drunk&#39;.format(&#39;Bob&#39;)
+/</pre>
+
+<p>angular.module(&#39;ui.format&#39;,[]).filter(&#39;format&#39;, function(){</p>
+
+<pre>&#39;use strict&#39;;
+
+return function(value, replace) {
+  var target = value;
+  if (angular.isString(target) &amp;&amp; replace !== undefined) {
+    if (!angular.isArray(replace) &amp;&amp; !angular.isObject(replace)) {
+      replace = [replace];
+    }
+    if (angular.isArray(replace)) {
+      var rlen = replace.length;
+      var rfx = function (str, i) {
+        i = parseInt(i, 10);
+        return (i &gt;= 0 &amp;&amp; i &lt; rlen) ? replace[i] : str;
+      };
+      target = target.replace(/\$([0-9]+)/g, rfx);
+    }
+    else {
+      angular.forEach(replace, function(value, key){
+        target = target.split(&#39;:&#39; + key).join(value);
+      });
+    }
+  }
+  return target;
+};</pre>
+
+<p>});</p>
+
+<p>/**</p>
+
+<pre> Wraps the
+ @param text {string} haystack to search through
+ @param search {string} needle to search for
+ @param [caseSensitive] {boolean} optional boolean to use case-sensitive searching
+/</pre>
+
+<p>angular.module(&#39;ui.highlight&#39;,[]).filter(&#39;highlight&#39;,
+function () {</p>
+
+<pre>&#39;use strict&#39;;
+
+return function (text, search, caseSensitive) {
+  if (text &amp;&amp; (search || angular.isNumber(search))) {
+    text = text.toString();
+    search = search.toString();
+    if (caseSensitive) {
+      return text.split(search).join(&#39;&lt;span class=&quot;ui-match&quot;&gt;&#39; + search + &#39;&lt;/span&gt;&#39;);
+    } else {
+      return text.replace(new RegExp(search, &#39;gi&#39;), &#39;&lt;span class=&quot;ui-match&quot;&gt;$&amp;&lt;/span&gt;&#39;);
+    }
+  } else {
+    return text;
+  }
+};</pre>
+
+<p>});</p>
+
+<p>// modeled after: angular-1.0.7/src/ng/directive/ngInclude.js
+angular.module(&#39;ui.include&#39;,[]) .directive(&#39;uiInclude&#39;,
+[&#39;$http&#39;, &#39;$templateCache&#39;, &#39;$anchorScroll&#39;,
+&#39;$compile&#39;,</p>
+
+<pre>               function($http,   $templateCache,   $anchorScroll,   $compile) {
+&#39;use strict&#39;;
+
+return {
+  restrict: &#39;ECA&#39;,
+  terminal: true,
+  compile: function(element, attr) {
+    var srcExp = attr.uiInclude || attr.src,
+        fragExp = attr.fragment || &#39;&#39;,
+        onloadExp = attr.onload || &#39;&#39;,
+        autoScrollExp = attr.autoscroll;
+
+    return function(scope, element) {
+      var changeCounter = 0,
+          childScope;
+
+      var clearContent = function() {
+        if (childScope) {
+          childScope.$destroy();
+          childScope = null;
+        }
+
+        element.html(&#39;&#39;);
+      };
+
+      function ngIncludeWatchAction() {
+        var thisChangeId = ++changeCounter;
+        var src = scope.$eval(srcExp);
+        var fragment = scope.$eval(fragExp);
+
+        if (src) {
+          $http.get(src, {cache: $templateCache}).success(function(response) {
+            if (thisChangeId !== changeCounter) { return; }
+
+            if (childScope) { childScope.$destroy(); }
+            childScope = scope.$new();
+
+            var contents;
+            if (fragment) {
+              contents = angular.element(&#39;&lt;div/&gt;&#39;).html(response).find(fragment);
+            }
+            else {
+              contents = angular.element(&#39;&lt;div/&gt;&#39;).html(response).contents();
+            }
+            element.html(contents);
+            $compile(contents)(childScope);
+
+            if (angular.isDefined(autoScrollExp) &amp;&amp; (!autoScrollExp || scope.$eval(autoScrollExp))) {
+              $anchorScroll();
+            }
+
+            childScope.$emit(&#39;$includeContentLoaded&#39;);
+            scope.$eval(onloadExp);
+          }).error(function() {
+            if (thisChangeId === changeCounter) { clearContent(); }
+          });
+        } else { clearContent(); }
+      }
+
+      scope.$watch(fragExp, ngIncludeWatchAction);
+      scope.$watch(srcExp, ngIncludeWatchAction);
+    };
+  }
+};</pre>
+
+<p>}]);</p>
+
+<p>/**</p>
+
+<pre> Provides an easy way to toggle a checkboxes indeterminate property
+
+ @example &lt;input type=&quot;checkbox&quot; ui-indeterminate=&quot;isUnkown&quot;&gt;
+/</pre>
+
+<p>angular.module(&#39;ui.indeterminate&#39;,[]).directive(&#39;uiIndeterminate&#39;,
+[</p>
+
+<pre>function () {
+  &#39;use strict&#39;;
+
+  return {
+    compile: function(tElm, tAttrs) {
+      if (!tAttrs.type || tAttrs.type.toLowerCase() !== &#39;checkbox&#39;) {
+        return angular.noop;
+      }
+
+      return function ($scope, elm, attrs) {
+        $scope.$watch(attrs.uiIndeterminate, function(newVal) {
+          elm[0].indeterminate = !!newVal;
+        });
+      };
+    }
+  };
+}]);</pre>
+
+<p>/**</p>
+
+<pre class="ruby"> <span class="ruby-constant">Converts</span> <span class="ruby-identifier">variable</span><span class="ruby-operator">-</span><span class="ruby-identifier">esque</span> <span class="ruby-identifier">naming</span> <span class="ruby-identifier">conventions</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">something</span> <span class="ruby-identifier">presentational</span>, <span class="ruby-identifier">capitalized</span> <span class="ruby-identifier">words</span> <span class="ruby-identifier">separated</span> <span class="ruby-identifier">by</span> <span class="ruby-identifier">space</span>.
+ <span class="ruby-ivar">@param</span> {<span class="ruby-constant">String</span>} <span class="ruby-identifier">value</span> <span class="ruby-constant">The</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">parsed</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">prettified</span>.
+ <span class="ruby-ivar">@param</span> {<span class="ruby-constant">String</span>} [<span class="ruby-identifier">inflector</span>] <span class="ruby-constant">The</span> <span class="ruby-identifier">inflector</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">use</span>. <span class="ruby-constant">Default</span><span class="ruby-operator">:</span> <span class="ruby-identifier">humanize</span>.
+ <span class="ruby-ivar">@return</span> {<span class="ruby-constant">String</span>}
+ <span class="ruby-ivar">@example</span> {{ <span class="ruby-string">&#39;Here Is my_phoneNumber&#39;</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">inflector</span>:<span class="ruby-string">&#39;humanize&#39;</span> }} =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Here</span> <span class="ruby-constant">Is</span> <span class="ruby-constant">My</span> <span class="ruby-constant">Phone</span> <span class="ruby-constant">Number</span>
+          {{ <span class="ruby-string">&#39;Here Is my_phoneNumber&#39;</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">inflector</span>:<span class="ruby-string">&#39;underscore&#39;</span> }} =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">here_is_my_phone_number</span>
+          {{ <span class="ruby-string">&#39;Here Is my_phoneNumber&#39;</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">inflector</span>:<span class="ruby-string">&#39;variable&#39;</span> }} =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">hereIsMyPhoneNumber</span>
+<span class="ruby-regexp">/
+</span></pre>
+
+<p>angular.module(&#39;ui.inflector&#39;,[]).filter(&#39;inflector&#39;,
+function () {</p>
+
+<pre>&#39;use strict&#39;;
+
+function tokenize(text) {
+  text = text.replace(/([A-Z])|([\-|\_])/g, function(_, $1) { return &#39; &#39; + ($1 || &#39;&#39;); });
+  return text.replace(/\s\s+/g, &#39; &#39;).trim().toLowerCase().split(&#39; &#39;);
+}
+
+function capitalizeTokens(tokens) {
+  var result = [];
+  angular.forEach(tokens, function(token) {
+    result.push(token.charAt(0).toUpperCase() + token.substr(1));
+  });
+  return result;
+}
+
+var inflectors = {
+  humanize: function (value) {
+    return capitalizeTokens(tokenize(value)).join(&#39; &#39;);
+  },
+  underscore: function (value) {
+    return tokenize(value).join(&#39;_&#39;);
+  },
+  variable: function (value) {
+    value = tokenize(value);
+    value = value[0] + capitalizeTokens(value.slice(1)).join(&#39;&#39;);
+    return value;
+  }
+};
+
+return function (text, inflector) {
+  if (inflector !== false &amp;&amp; angular.isString(text)) {
+    inflector = inflector || &#39;humanize&#39;;
+    return inflectors[inflector](text);
+  } else {
+    return text;
+  }
+};</pre>
+
+<p>});</p>
+
+<p>/**</p>
+
+<pre> General-purpose jQuery wrapper. Simply pass the plugin name as the expression.
+
+ It is possible to specify a default set of parameters for each jQuery plugin.
+ Under the jq key, namespace each plugin by that which will be passed to ui-jq.
+ Unfortunately, at this time you can only pre-define the first parameter.
+ @example { jq : { datepicker : { showOn:&#39;click&#39; } } }
+
+ @param ui-jq {string} The $elm.[pluginName]() to call.
+ @param [ui-options] {mixed} Expression to be evaluated and passed as options to the function
+     Multiple parameters can be separated by commas
+ @param [ui-refresh] {expression} Watch expression and refire plugin on changes
+
+ @example &lt;input ui-jq=&quot;datepicker&quot; ui-options=&quot;{showOn:&#39;click&#39;},secondParameter,thirdParameter&quot; ui-refresh=&quot;iChange&quot;&gt;
+/</pre>
+
+<p>angular.module(&#39;ui.jq&#39;,[]).</p>
+
+<pre>value(&#39;uiJqConfig&#39;,{}).
+directive(&#39;uiJq&#39;, [&#39;uiJqConfig&#39;, &#39;$timeout&#39;, function uiJqInjectingFunction(uiJqConfig, $timeout) {
+&#39;use strict&#39;;
+
+return {
+  restrict: &#39;A&#39;,
+  compile: function uiJqCompilingFunction(tElm, tAttrs) {
+
+    if (!angular.isFunction(tElm[tAttrs.uiJq])) {
+      throw new Error(&#39;ui-jq: The &quot;&#39; + tAttrs.uiJq + &#39;&quot; function does not exist&#39;);
+    }
+    var options = uiJqConfig &amp;&amp; uiJqConfig[tAttrs.uiJq];
+
+    return function uiJqLinkingFunction(scope, elm, attrs) {
+
+      // If change compatibility is enabled, the form input&#39;s &quot;change&quot; event will trigger an &quot;input&quot; event
+      if (attrs.ngModel &amp;&amp; elm.is(&#39;select,input,textarea&#39;)) {
+        elm.bind(&#39;change&#39;, function() {
+          elm.trigger(&#39;input&#39;);
+        });
+      }
+
+      function createLinkOptions(){
+        var linkOptions = [];
+
+        // If ui-options are passed, merge (or override) them onto global defaults and pass to the jQuery method
+        if (attrs.uiOptions) {
+          linkOptions = scope.$eval(&#39;[&#39; + attrs.uiOptions + &#39;]&#39;);
+          if (angular.isObject(options) &amp;&amp; angular.isObject(linkOptions[0])) {
+            linkOptions[0] = angular.extend({}, options, linkOptions[0]);
+          }
+        } else if (options) {
+          linkOptions = [options];
+        }
+        return linkOptions;
+      }
+
+      // Call jQuery method and pass relevant options
+      function callPlugin() {
+        $timeout(function() {
+          elm[attrs.uiJq].apply(elm, createLinkOptions());
+        }, 0, false);
+      }
+
+      // If ui-refresh is used, re-fire the the method upon every change
+      if (attrs.uiRefresh) {
+        scope.$watch(attrs.uiRefresh, function() {
+          callPlugin();
+        });
+      }
+      callPlugin();
+    };
+  }
+};</pre>
+
+<p>}]);</p>
+
+<p>angular.module(&#39;ui.keypress&#39;,[]). factory(&#39;keypressHelper&#39;,
+[&#39;$parse&#39;, function keypress($parse){</p>
+
+<pre>&#39;use strict&#39;;
+
+var keysByCode = {
+  8: &#39;backspace&#39;,
+  9: &#39;tab&#39;,
+  13: &#39;enter&#39;,
+  27: &#39;esc&#39;,
+  32: &#39;space&#39;,
+  33: &#39;pageup&#39;,
+  34: &#39;pagedown&#39;,
+  35: &#39;end&#39;,
+  36: &#39;home&#39;,
+  37: &#39;left&#39;,
+  38: &#39;up&#39;,
+  39: &#39;right&#39;,
+  40: &#39;down&#39;,
+  45: &#39;insert&#39;,
+  46: &#39;delete&#39;
+};
+
+var capitaliseFirstLetter = function (string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
+return function(mode, scope, elm, attrs) {
+  var params, combinations = [];
+  params = scope.$eval(attrs[&#39;ui&#39;+capitaliseFirstLetter(mode)]);
+
+  // Prepare combinations for simple checking
+  angular.forEach(params, function (v, k) {
+    var combination, expression;
+    expression = $parse(v);
+
+    angular.forEach(k.split(&#39; &#39;), function(variation) {
+      combination = {
+        expression: expression,
+        keys: {}
+      };
+      angular.forEach(variation.split(&#39;-&#39;), function (value) {
+        combination.keys[value] = true;
+      });
+      combinations.push(combination);
+    });
+  });
+
+  // Check only matching of pressed keys one of the conditions
+  elm.bind(mode, function (event) {
+    // No need to do that inside the cycle
+    var metaPressed = !!(event.metaKey &amp;&amp; !event.ctrlKey);
+    var altPressed = !!event.altKey;
+    var ctrlPressed = !!event.ctrlKey;
+    var shiftPressed = !!event.shiftKey;
+    var keyCode = event.keyCode;
+
+    // normalize keycodes
+    if (mode === &#39;keypress&#39; &amp;&amp; !shiftPressed &amp;&amp; keyCode &gt;= 97 &amp;&amp; keyCode &lt;= 122) {
+      keyCode = keyCode - 32;
+    }
+
+    // Iterate over prepared combinations
+    angular.forEach(combinations, function (combination) {
+
+      var mainKeyPressed = combination.keys[keysByCode[keyCode]] || combination.keys[keyCode.toString()];
+
+      var metaRequired = !!combination.keys.meta;
+      var altRequired = !!combination.keys.alt;
+      var ctrlRequired = !!combination.keys.ctrl;
+      var shiftRequired = !!combination.keys.shift;
+
+      if (
+        mainKeyPressed &amp;&amp;
+        ( metaRequired === metaPressed ) &amp;&amp;
+        ( altRequired === altPressed ) &amp;&amp;
+        ( ctrlRequired === ctrlPressed ) &amp;&amp;
+        ( shiftRequired === shiftPressed )
+      ) {
+        // Run the function
+        scope.$apply(function () {
+          combination.expression(scope, { &#39;$event&#39;: event });
+        });
+      }
+    });
+  });
+};</pre>
+
+<p>}]);</p>
+
+<p>/**</p>
+
+<pre>Bind one or more handlers to particular keys or their combination
+@param hash {mixed} keyBindings Can be an object or string where keybinding expression of keys or keys combinations and AngularJS Exspressions are set. Object syntax: &quot;{ keys1: expression1 [, keys2: expression2 [ , ... ]]}&quot;. String syntax: &quot;&quot;expression1 on keys1 [ and expression2 on keys2 [ and ... ]]&quot;&quot;. Expression is an AngularJS Expression, and key(s) are dash-separated combinations of keys and modifiers (one or many, if any. Order does not matter). Supported modifiers are &#39;ctrl&#39;, &#39;shift&#39;, &#39;alt&#39; and key can be used either via its keyCode (13 for Return) or name. Named keys are &#39;backspace&#39;, &#39;tab&#39;, &#39;enter&#39;, &#39;esc&#39;, &#39;space&#39;, &#39;pageup&#39;, &#39;pagedown&#39;, &#39;end&#39;, &#39;home&#39;, &#39;left&#39;, &#39;up&#39;, &#39;right&#39;, &#39;down&#39;, &#39;insert&#39;, &#39;delete&#39;.
+@example &lt;input ui-keypress=&quot;{enter:&#39;x = 1&#39;, &#39;ctrl-shift-space&#39;:&#39;foo()&#39;, &#39;shift-13&#39;:&#39;bar()&#39;}&quot; /&gt; &lt;input ui-keypress=&quot;foo = 2 on ctrl-13 and bar(&#39;hello&#39;) on shift-esc&quot; /&gt;</pre>
+
+<p>angular.module(&#39;ui.keypress&#39;).directive(&#39;uiKeydown&#39;,
+[&#39;keypressHelper&#39;, function(keypressHelper){</p>
+
+<pre>&#39;use strict&#39;;
+
+return {
+  link: function (scope, elm, attrs) {
+    keypressHelper(&#39;keydown&#39;, scope, elm, attrs);
+  }
+};</pre>
+
+<p>}]);</p>
+
+<p>angular.module(&#39;ui.keypress&#39;).directive(&#39;uiKeypress&#39;,
+[&#39;keypressHelper&#39;, function(keypressHelper){</p>
+
+<pre>&#39;use strict&#39;;
+
+return {
+  link: function (scope, elm, attrs) {
+    keypressHelper(&#39;keypress&#39;, scope, elm, attrs);
+  }
+};</pre>
+
+<p>}]);</p>
+
+<p>angular.module(&#39;ui.keypress&#39;).directive(&#39;uiKeyup&#39;,
+[&#39;keypressHelper&#39;, function(keypressHelper){</p>
+
+<pre>&#39;use strict&#39;;
+
+return {
+  link: function (scope, elm, attrs) {
+    keypressHelper(&#39;keyup&#39;, scope, elm, attrs);
+  }
+};</pre>
+
+<p>}]);</p>
+
+<p>/*</p>
+
+<pre>Attaches input mask onto input element
+ /</pre>
+
+<p>angular.module(&#39;ui.mask&#39;, [])</p>
+
+<pre class="ruby">.<span class="ruby-identifier">value</span>(<span class="ruby-string">&#39;uiMaskConfig&#39;</span>, {
+  <span class="ruby-string">&#39;maskDefinitions&#39;</span><span class="ruby-operator">:</span> {
+    <span class="ruby-string">&#39;9&#39;</span><span class="ruby-operator">:</span> <span class="ruby-regexp">/\d/</span>,
+    <span class="ruby-string">&#39;A&#39;</span><span class="ruby-operator">:</span> <span class="ruby-regexp">/[a-zA-Z]/</span>,
+    <span class="ruby-string">&#39;*&#39;</span><span class="ruby-operator">:</span> <span class="ruby-regexp">/[a-zA-Z0-9]/</span>
+  },
+  <span class="ruby-string">&#39;clearOnBlur&#39;</span><span class="ruby-operator">:</span> <span class="ruby-keyword">true</span>
+})
+.<span class="ruby-identifier">directive</span>(<span class="ruby-string">&#39;uiMask&#39;</span>, [<span class="ruby-string">&#39;uiMaskConfig&#39;</span>, <span class="ruby-string">&#39;$parse&#39;</span>, <span class="ruby-identifier">function</span> (<span class="ruby-identifier">maskConfig</span>, <span class="ruby-identifier">$parse</span>) {
+  <span class="ruby-string">&#39;use strict&#39;</span>;
+
+  <span class="ruby-keyword">return</span> {
+    <span class="ruby-identifier">priority</span><span class="ruby-operator">:</span> <span class="ruby-value">100</span>,
+    <span class="ruby-identifier">require</span><span class="ruby-operator">:</span> <span class="ruby-string">&#39;ngModel&#39;</span>,
+    <span class="ruby-identifier">restrict</span><span class="ruby-operator">:</span> <span class="ruby-string">&#39;A&#39;</span>,
+    <span class="ruby-identifier">compile</span><span class="ruby-operator">:</span> <span class="ruby-identifier">function</span> <span class="ruby-identifier">uiMaskCompilingFunction</span>(){
+      <span class="ruby-identifier">var</span> <span class="ruby-identifier">options</span> = <span class="ruby-identifier">maskConfig</span>;
+
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">function</span> <span class="ruby-identifier">uiMaskLinkingFunction</span>(<span class="ruby-identifier">scope</span>, <span class="ruby-identifier">iElement</span>, <span class="ruby-identifier">iAttrs</span>, <span class="ruby-identifier">controller</span>){
+        <span class="ruby-identifier">var</span> <span class="ruby-identifier">maskProcessed</span> = <span class="ruby-keyword">false</span>, <span class="ruby-identifier">eventsBound</span> = <span class="ruby-keyword">false</span>,
+          <span class="ruby-identifier">maskCaretMap</span>, <span class="ruby-identifier">maskPatterns</span>, <span class="ruby-identifier">maskPlaceholder</span>, <span class="ruby-identifier">maskComponents</span>,
+        <span class="ruby-regexp">//</span> <span class="ruby-constant">Minimum</span> <span class="ruby-identifier">required</span> <span class="ruby-identifier">length</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">considered</span> <span class="ruby-identifier">valid</span>
+          <span class="ruby-identifier">minRequiredLength</span>,
+          <span class="ruby-identifier">value</span>, <span class="ruby-identifier">valueMasked</span>, <span class="ruby-identifier">isValid</span>,
+        <span class="ruby-regexp">//</span> <span class="ruby-constant">Vars</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">initializing</span><span class="ruby-operator">/</span><span class="ruby-identifier">uninitializing</span>
+          <span class="ruby-identifier">originalPlaceholder</span> = <span class="ruby-identifier">iAttrs</span>.<span class="ruby-identifier">placeholder</span>,
+          <span class="ruby-identifier">originalMaxlength</span> = <span class="ruby-identifier">iAttrs</span>.<span class="ruby-identifier">maxlength</span>,
+        <span class="ruby-regexp">//</span> <span class="ruby-constant">Vars</span> <span class="ruby-identifier">used</span> <span class="ruby-identifier">exclusively</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">eventHandler</span>()
+          <span class="ruby-identifier">oldValue</span>, <span class="ruby-identifier">oldValueUnmasked</span>, <span class="ruby-identifier">oldCaretPosition</span>, <span class="ruby-identifier">oldSelectionLength</span>;
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">maskAttr</span>){
+          <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">angular</span>.<span class="ruby-identifier">isDefined</span>(<span class="ruby-identifier">maskAttr</span>)) {
+            <span class="ruby-keyword">return</span> <span class="ruby-identifier">uninitialize</span>();
+          }
+          <span class="ruby-identifier">processRawMask</span>(<span class="ruby-identifier">maskAttr</span>);
+          <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">maskProcessed</span>) {
+            <span class="ruby-keyword">return</span> <span class="ruby-identifier">uninitialize</span>();
+          }
+          <span class="ruby-identifier">initializeElement</span>();
+          <span class="ruby-identifier">bindEventListeners</span>();
+          <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>;
+        }
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">initPlaceholder</span>(<span class="ruby-identifier">placeholderAttr</span>) {
+          <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span> <span class="ruby-identifier">angular</span>.<span class="ruby-identifier">isDefined</span>(<span class="ruby-identifier">placeholderAttr</span>)) {
+            <span class="ruby-keyword">return</span>;
+          }
+
+          <span class="ruby-identifier">maskPlaceholder</span> = <span class="ruby-identifier">placeholderAttr</span>;
+
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">If</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">mask</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">processed</span>, <span class="ruby-keyword">then</span> <span class="ruby-identifier">we</span> <span class="ruby-identifier">need</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">update</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">value</span>
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">maskProcessed</span>) {
+            <span class="ruby-identifier">eventHandler</span>();
+          }
+        }
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">formatter</span>(<span class="ruby-identifier">fromModelValue</span>){
+          <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">maskProcessed</span>) {
+            <span class="ruby-keyword">return</span> <span class="ruby-identifier">fromModelValue</span>;
+          }
+          <span class="ruby-identifier">value</span> = <span class="ruby-identifier">unmaskValue</span>(<span class="ruby-identifier">fromModelValue</span> <span class="ruby-operator">||</span> <span class="ruby-string">&#39;&#39;</span>);
+          <span class="ruby-identifier">isValid</span> = <span class="ruby-identifier">validateValue</span>(<span class="ruby-identifier">value</span>);
+          <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">$setValidity</span>(<span class="ruby-string">&#39;mask&#39;</span>, <span class="ruby-identifier">isValid</span>);
+          <span class="ruby-keyword">return</span> <span class="ruby-identifier">isValid</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">maskValue</span>(<span class="ruby-identifier">value</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">undefined</span>;
+        }
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">parser</span>(<span class="ruby-identifier">fromViewValue</span>){
+          <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">maskProcessed</span>) {
+            <span class="ruby-keyword">return</span> <span class="ruby-identifier">fromViewValue</span>;
+          }
+          <span class="ruby-identifier">value</span> = <span class="ruby-identifier">unmaskValue</span>(<span class="ruby-identifier">fromViewValue</span> <span class="ruby-operator">||</span> <span class="ruby-string">&#39;&#39;</span>);
+          <span class="ruby-identifier">isValid</span> = <span class="ruby-identifier">validateValue</span>(<span class="ruby-identifier">value</span>);
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">We</span> <span class="ruby-identifier">have</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">set</span> <span class="ruby-identifier">viewValue</span> <span class="ruby-identifier">manually</span> <span class="ruby-identifier">as</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">reformatting</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">input</span>
+          <span class="ruby-regexp">//</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">performed</span> <span class="ruby-identifier">by</span> <span class="ruby-identifier">eventHandler</span>() <span class="ruby-identifier">doesn</span><span class="ruby-string">&#39;t happen until after
+          // this parser is called, which causes what the user sees in the input
+          // to be out-of-sync with what the controller&#39;</span><span class="ruby-identifier">s</span> <span class="ruby-identifier">$viewValue</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">set</span> <span class="ruby-identifier">to</span>.
+          <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">$viewValue</span> = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">maskValue</span>(<span class="ruby-identifier">value</span>) <span class="ruby-operator">:</span> <span class="ruby-string">&#39;&#39;</span>;
+          <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">$setValidity</span>(<span class="ruby-string">&#39;mask&#39;</span>, <span class="ruby-identifier">isValid</span>);
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">value</span> <span class="ruby-operator">===</span> <span class="ruby-string">&#39;&#39;</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">iAttrs</span>.<span class="ruby-identifier">required</span>) {
+              <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">$setValidity</span>(<span class="ruby-string">&#39;required&#39;</span>, <span class="ruby-operator">!</span><span class="ruby-identifier">controller</span>.<span class="ruby-identifier">$error</span>.<span class="ruby-identifier">required</span>);
+          }
+          <span class="ruby-keyword">return</span> <span class="ruby-identifier">isValid</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">undefined</span>;
+        }
+
+        <span class="ruby-identifier">var</span> <span class="ruby-identifier">linkOptions</span> = {};
+
+        <span class="ruby-keyword">if</span> (<span class="ruby-identifier">iAttrs</span>.<span class="ruby-identifier">uiOptions</span>) {
+          <span class="ruby-identifier">linkOptions</span> = <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">$eval</span>(<span class="ruby-string">&#39;[&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">iAttrs</span>.<span class="ruby-identifier">uiOptions</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;]&#39;</span>);
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">angular</span>.<span class="ruby-identifier">isObject</span>(<span class="ruby-identifier">linkOptions</span>[<span class="ruby-value">0</span>])) {
+            <span class="ruby-regexp">//</span> <span class="ruby-identifier">we</span> <span class="ruby-identifier">can</span><span class="ruby-string">&#39;t use angular.copy nor angular.extend, they lack the power to do a deep merge
+            linkOptions = (function(original, current){
+              for(var i in original) {
+                if (Object.prototype.hasOwnProperty.call(original, i)) {
+                  if (current[i] === undefined) {
+                    current[i] = angular.copy(original[i]);
+                  } else {
+                    angular.extend(current[i], original[i]);
+                  }
+                }
+              }
+              return current;
+            })(options, linkOptions[0]);
+          }
+        } else {
+          linkOptions = options;
+        }
+
+        iAttrs.$observe(&#39;</span><span class="ruby-identifier">uiMask</span><span class="ruby-string">&#39;, initialize);
+        iAttrs.$observe(&#39;</span><span class="ruby-identifier">placeholder</span><span class="ruby-string">&#39;, initPlaceholder);
+        var modelViewValue = false;
+        iAttrs.$observe(&#39;</span><span class="ruby-identifier">modelViewValue</span><span class="ruby-string">&#39;, function(val) {
+          if(val === &#39;</span><span class="ruby-keyword">true</span><span class="ruby-string">&#39;) {
+            modelViewValue = true;
+          }
+        });
+        scope.$watch(iAttrs.ngModel, function(val) {
+          if(modelViewValue &amp;&amp; val) {
+            var model = $parse(iAttrs.ngModel);
+            model.assign(scope, controller.$viewValue);
+          }
+        });
+        controller.$formatters.push(formatter);
+        controller.$parsers.push(parser);
+
+        function uninitialize(){
+          maskProcessed = false;
+          unbindEventListeners();
+
+          if (angular.isDefined(originalPlaceholder)) {
+            iElement.attr(&#39;</span><span class="ruby-identifier">placeholder</span><span class="ruby-string">&#39;, originalPlaceholder);
+          } else {
+            iElement.removeAttr(&#39;</span><span class="ruby-identifier">placeholder</span><span class="ruby-string">&#39;);
+          }
+
+          if (angular.isDefined(originalMaxlength)) {
+            iElement.attr(&#39;</span><span class="ruby-identifier">maxlength</span><span class="ruby-string">&#39;, originalMaxlength);
+          } else {
+            iElement.removeAttr(&#39;</span><span class="ruby-identifier">maxlength</span><span class="ruby-string">&#39;);
+          }
+
+          iElement.val(controller.$modelValue);
+          controller.$viewValue = controller.$modelValue;
+          return false;
+        }
+
+        function initializeElement(){
+          value = oldValueUnmasked = unmaskValue(controller.$viewValue || &#39;</span><span class="ruby-string">&#39;);
+          valueMasked = oldValue = maskValue(value);
+          isValid = validateValue(value);
+          var viewValue = isValid &amp;&amp; value.length ? valueMasked : &#39;</span><span class="ruby-string">&#39;;
+          if (iAttrs.maxlength) { // Double maxlength to allow pasting new val at end of mask
+            iElement.attr(&#39;</span><span class="ruby-identifier">maxlength</span><span class="ruby-string">&#39;, maskCaretMap[maskCaretMap.length - 1] * 2);
+          }
+          iElement.attr(&#39;</span><span class="ruby-identifier">placeholder</span><span class="ruby-string">&#39;, maskPlaceholder);
+          iElement.val(viewValue);
+          controller.$viewValue = viewValue;
+          // Not using $setViewValue so we don&#39;</span><span class="ruby-identifier">t</span> <span class="ruby-identifier">clobber</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">model</span> <span class="ruby-identifier">value</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">dirty</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">form</span>
+          <span class="ruby-regexp">//</span> <span class="ruby-identifier">without</span> <span class="ruby-identifier">any</span> <span class="ruby-identifier">kind</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">user</span> <span class="ruby-identifier">interaction</span>.
+        }
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">bindEventListeners</span>(){
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">eventsBound</span>) {
+            <span class="ruby-keyword">return</span>;
+          }
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">bind</span>(<span class="ruby-string">&#39;blur&#39;</span>, <span class="ruby-identifier">blurHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">bind</span>(<span class="ruby-string">&#39;mousedown mouseup&#39;</span>, <span class="ruby-identifier">mouseDownUpHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">bind</span>(<span class="ruby-string">&#39;input keyup click focus&#39;</span>, <span class="ruby-identifier">eventHandler</span>);
+          <span class="ruby-identifier">eventsBound</span> = <span class="ruby-keyword">true</span>;
+        }
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">unbindEventListeners</span>(){
+          <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">eventsBound</span>) {
+            <span class="ruby-keyword">return</span>;
+          }
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">unbind</span>(<span class="ruby-string">&#39;blur&#39;</span>, <span class="ruby-identifier">blurHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">unbind</span>(<span class="ruby-string">&#39;mousedown&#39;</span>, <span class="ruby-identifier">mouseDownUpHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">unbind</span>(<span class="ruby-string">&#39;mouseup&#39;</span>, <span class="ruby-identifier">mouseDownUpHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">unbind</span>(<span class="ruby-string">&#39;input&#39;</span>, <span class="ruby-identifier">eventHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">unbind</span>(<span class="ruby-string">&#39;keyup&#39;</span>, <span class="ruby-identifier">eventHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">unbind</span>(<span class="ruby-string">&#39;click&#39;</span>, <span class="ruby-identifier">eventHandler</span>);
+          <span class="ruby-identifier">iElement</span>.<span class="ruby-identifier">unbind</span>(<span class="ruby-string">&#39;focus&#39;</span>, <span class="ruby-identifier">eventHandler</span>);
+          <span class="ruby-identifier">eventsBound</span> = <span class="ruby-keyword">false</span>;
+        }
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">validateValue</span>(<span class="ruby-identifier">value</span>){
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">Zero</span><span class="ruby-operator">-</span><span class="ruby-identifier">length</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">validity</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">ngRequired</span><span class="ruby-string">&#39;s determination
+          return value.length ? value.length &gt;= minRequiredLength : true;
+        }
+
+        function unmaskValue(value){
+          var valueUnmasked = &#39;</span><span class="ruby-string">&#39;,
+            maskPatternsCopy = maskPatterns.slice();
+          // Preprocess by stripping mask components from value
+          value = value.toString();
+          angular.forEach(maskComponents, function (component){
+            value = value.replace(component, &#39;</span><span class="ruby-string">&#39;);
+          });
+          angular.forEach(value.split(&#39;</span><span class="ruby-string">&#39;), function (chr){
+            if (maskPatternsCopy.length &amp;&amp; maskPatternsCopy[0].test(chr)) {
+              valueUnmasked += chr;
+              maskPatternsCopy.shift();
+            }
+          });
+          return valueUnmasked;
+        }
+
+        function maskValue(unmaskedValue){
+          var valueMasked = &#39;</span><span class="ruby-string">&#39;,
+              maskCaretMapCopy = maskCaretMap.slice();
+
+          angular.forEach(maskPlaceholder.split(&#39;</span><span class="ruby-string">&#39;), function (chr, i){
+            if (unmaskedValue.length &amp;&amp; i === maskCaretMapCopy[0]) {
+              valueMasked  += unmaskedValue.charAt(0) || &#39;</span><span class="ruby-identifier">_</span><span class="ruby-string">&#39;;
+              unmaskedValue = unmaskedValue.substr(1);
+              maskCaretMapCopy.shift();
+            }
+            else {
+              valueMasked += chr;
+            }
+          });
+          return valueMasked;
+        }
+
+        function getPlaceholderChar(i) {
+          var placeholder = iAttrs.placeholder;
+
+          if (typeof placeholder !== &#39;</span><span class="ruby-identifier">undefined</span><span class="ruby-string">&#39; &amp;&amp; placeholder[i]) {
+            return placeholder[i];
+          } else {
+            return &#39;</span><span class="ruby-identifier">_</span><span class="ruby-string">&#39;;
+          }
+        }
+
+        // Generate array of mask components that will be stripped from a masked value
+        // before processing to prevent mask components from being added to the unmasked value.
+        // E.g., a mask pattern of &#39;</span><span class="ruby-operator">+</span><span class="ruby-value">7</span> <span class="ruby-value">9999</span><span class="ruby-string">&#39; won&#39;</span><span class="ruby-identifier">t</span> <span class="ruby-identifier">have</span> <span class="ruby-identifier">the</span> <span class="ruby-value">7</span> <span class="ruby-identifier">bleed</span> <span class="ruby-identifier">into</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">unmasked</span> <span class="ruby-identifier">value</span>.
+        <span class="ruby-operator">/</span><span class="ruby-regexp">/ If a maskable char is followed by a mask char and has a mask
+        /</span><span class="ruby-operator">/</span> <span class="ruby-identifier">char</span> <span class="ruby-identifier">behind</span> <span class="ruby-identifier">it</span>, <span class="ruby-identifier">we</span><span class="ruby-string">&#39;ll split it into it&#39;</span><span class="ruby-identifier">s</span> <span class="ruby-identifier">own</span> <span class="ruby-identifier">component</span> <span class="ruby-identifier">so</span> <span class="ruby-keyword">if</span>
+        <span class="ruby-regexp">//</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">user</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">aggressively</span> <span class="ruby-identifier">deleting</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">input</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">char</span> <span class="ruby-identifier">ahead</span>
+        <span class="ruby-regexp">//</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">maskable</span> <span class="ruby-identifier">char</span> <span class="ruby-identifier">gets</span> <span class="ruby-identifier">deleted</span>, <span class="ruby-identifier">we</span><span class="ruby-string">&#39;ll still be able to strip
+        // it in the unmaskValue() preprocessing.
+        function getMaskComponents() {
+          return maskPlaceholder.replace(/[_]+/g, &#39;</span><span class="ruby-identifier">_</span><span class="ruby-string">&#39;).replace(/([^_]+)([a-zA-Z0-9])([^_])/g, &#39;</span><span class="ruby-node">$1</span><span class="ruby-node">$2</span><span class="ruby-identifier">_</span><span class="ruby-node">$3</span><span class="ruby-string">&#39;).split(&#39;</span><span class="ruby-identifier">_</span><span class="ruby-string">&#39;);
+        }
+
+        function processRawMask(mask){
+          var characterCount = 0;
+
+          maskCaretMap    = [];
+          maskPatterns    = [];
+          maskPlaceholder = &#39;</span><span class="ruby-string">&#39;;
+
+          if (typeof mask === &#39;</span><span class="ruby-identifier">string</span><span class="ruby-string">&#39;) {
+            minRequiredLength = 0;
+
+            var isOptional = false,
+                numberOfOptionalCharacters = 0,
+                splitMask  = mask.split(&#39;</span><span class="ruby-string">&#39;);
+
+            angular.forEach(splitMask, function (chr, i){
+              if (linkOptions.maskDefinitions[chr]) {
+
+                maskCaretMap.push(characterCount);
+
+                maskPlaceholder += getPlaceholderChar(i - numberOfOptionalCharacters);
+                maskPatterns.push(linkOptions.maskDefinitions[chr]);
+
+                characterCount++;
+                if (!isOptional) {
+                  minRequiredLength++;
+                }
+              }
+              else if (chr === &#39;</span><span class="ruby-operator">?</span><span class="ruby-string">&#39;) {
+                isOptional = true;
+                numberOfOptionalCharacters++;
+              }
+              else {
+                maskPlaceholder += chr;
+                characterCount++;
+              }
+            });
+          }
+          // Caret position immediately following last position is valid.
+          maskCaretMap.push(maskCaretMap.slice().pop() + 1);
+
+          maskComponents = getMaskComponents();
+          maskProcessed  = maskCaretMap.length &gt; 1 ? true : false;
+        }
+
+        function blurHandler(){
+          if (linkOptions.clearOnBlur) {
+            oldCaretPosition = 0;
+            oldSelectionLength = 0;
+            if (!isValid || value.length === 0) {
+              valueMasked = &#39;</span><span class="ruby-string">&#39;;
+              iElement.val(&#39;</span><span class="ruby-string">&#39;);
+              scope.$apply(function () {
+                controller.$setViewValue(&#39;</span><span class="ruby-string">&#39;);
+              });
+            }
+          }
+        }
+
+        function mouseDownUpHandler(e){
+          if (e.type === &#39;</span><span class="ruby-identifier">mousedown</span><span class="ruby-string">&#39;) {
+            iElement.bind(&#39;</span><span class="ruby-identifier">mouseout</span><span class="ruby-string">&#39;, mouseoutHandler);
+          } else {
+            iElement.unbind(&#39;</span><span class="ruby-identifier">mouseout</span><span class="ruby-string">&#39;, mouseoutHandler);
+          }
+        }
+
+        iElement.bind(&#39;</span><span class="ruby-identifier">mousedown</span> <span class="ruby-identifier">mouseup</span><span class="ruby-string">&#39;, mouseDownUpHandler);
+
+        function mouseoutHandler(){
+          /*jshint validthis: true */
+          oldSelectionLength = getSelectionLength(this);
+          iElement.unbind(&#39;</span><span class="ruby-identifier">mouseout</span><span class="ruby-string">&#39;, mouseoutHandler);
+        }
+
+        function eventHandler(e){
+          /*jshint validthis: true */
+          e = e || {};
+          // Allows more efficient minification
+          var eventWhich = e.which,
+            eventType = e.type;
+
+          // Prevent shift and ctrl from mucking with old values
+          if (eventWhich === 16 || eventWhich === 91) { return;}
+
+          var val = iElement.val(),
+            valOld = oldValue,
+            valMasked,
+            valUnmasked = unmaskValue(val),
+            valUnmaskedOld = oldValueUnmasked,
+            valAltered = false,
+
+            caretPos = getCaretPosition(this) || 0,
+            caretPosOld = oldCaretPosition || 0,
+            caretPosDelta = caretPos - caretPosOld,
+            caretPosMin = maskCaretMap[0],
+            caretPosMax = maskCaretMap[valUnmasked.length] || maskCaretMap.slice().shift(),
+
+            selectionLenOld = oldSelectionLength || 0,
+            isSelected = getSelectionLength(this) &gt; 0,
+            wasSelected = selectionLenOld &gt; 0,
+
+          // Case: Typing a character to overwrite a selection
+            isAddition = (val.length &gt; valOld.length) || (selectionLenOld &amp;&amp; val.length &gt; valOld.length - selectionLenOld),
+          // Case: Delete and backspace behave identically on a selection
+            isDeletion = (val.length &lt; valOld.length) || (selectionLenOld &amp;&amp; val.length === valOld.length - selectionLenOld),
+            isSelection = (eventWhich &gt;= 37 &amp;&amp; eventWhich &lt;= 40) &amp;&amp; e.shiftKey, // Arrow key codes
+
+            isKeyLeftArrow = eventWhich === 37,
+          // Necessary due to &quot;input&quot; event not providing a key code
+            isKeyBackspace = eventWhich === 8 || (eventType !== &#39;</span><span class="ruby-identifier">keyup</span><span class="ruby-string">&#39; &amp;&amp; isDeletion &amp;&amp; (caretPosDelta === -1)),
+            isKeyDelete = eventWhich === 46 || (eventType !== &#39;</span><span class="ruby-identifier">keyup</span><span class="ruby-string">&#39; &amp;&amp; isDeletion &amp;&amp; (caretPosDelta === 0 ) &amp;&amp; !wasSelected),
+
+          // Handles cases where caret is moved and placed in front of invalid maskCaretMap position. Logic below
+          // ensures that, on click or leftward caret placement, caret is moved leftward until directly right of
+          // non-mask character. Also applied to click since users are (arguably) more likely to backspace
+          // a character when clicking within a filled input.
+            caretBumpBack = (isKeyLeftArrow || isKeyBackspace || eventType === &#39;</span><span class="ruby-identifier">click</span><span class="ruby-string">&#39;) &amp;&amp; caretPos &gt; caretPosMin;
+
+          oldSelectionLength = getSelectionLength(this);
+
+          // These events don&#39;</span><span class="ruby-identifier">t</span> <span class="ruby-identifier">require</span> <span class="ruby-identifier">any</span> <span class="ruby-identifier">action</span>
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">isSelection</span> <span class="ruby-operator">||</span> (<span class="ruby-identifier">isSelected</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">eventType</span> <span class="ruby-operator">===</span> <span class="ruby-string">&#39;click&#39;</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">eventType</span> <span class="ruby-operator">===</span> <span class="ruby-string">&#39;keyup&#39;</span>))) {
+            <span class="ruby-keyword">return</span>;
+          }
+
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">Value</span> <span class="ruby-constant">Handling</span>
+          <span class="ruby-regexp">//</span> <span class="ruby-operator">===</span><span class="ruby-operator">===</span><span class="ruby-operator">===</span><span class="ruby-operator">===</span><span class="ruby-operator">==</span>
+
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">User</span> <span class="ruby-identifier">attempted</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">delete</span> <span class="ruby-identifier">but</span> <span class="ruby-identifier">raw</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">was</span> <span class="ruby-identifier">unaffected</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-identifier">correct</span> <span class="ruby-identifier">this</span> <span class="ruby-identifier">grievous</span> <span class="ruby-identifier">offense</span>
+          <span class="ruby-keyword">if</span> ((<span class="ruby-identifier">eventType</span> <span class="ruby-operator">===</span> <span class="ruby-string">&#39;input&#39;</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">isDeletion</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">wasSelected</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">valUnmasked</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">valUnmaskedOld</span>) {
+            <span class="ruby-keyword">while</span> (<span class="ruby-identifier">isKeyBackspace</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">caretPos</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">caretPosMin</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">isValidCaretPosition</span>(<span class="ruby-identifier">caretPos</span>)) {
+              <span class="ruby-identifier">caretPos</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span>;
+            }
+            <span class="ruby-keyword">while</span> (<span class="ruby-identifier">isKeyDelete</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">caretPos</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">caretPosMax</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">maskCaretMap</span>.<span class="ruby-identifier">indexOf</span>(<span class="ruby-identifier">caretPos</span>) <span class="ruby-operator">===</span> <span class="ruby-value">-1</span>) {
+              <span class="ruby-identifier">caretPos</span><span class="ruby-operator">+</span><span class="ruby-operator">+</span>;
+            }
+            <span class="ruby-identifier">var</span> <span class="ruby-identifier">charIndex</span> = <span class="ruby-identifier">maskCaretMap</span>.<span class="ruby-identifier">indexOf</span>(<span class="ruby-identifier">caretPos</span>);
+            <span class="ruby-regexp">//</span> <span class="ruby-constant">Strip</span> <span class="ruby-identifier">out</span> <span class="ruby-identifier">non</span><span class="ruby-operator">-</span><span class="ruby-identifier">mask</span> <span class="ruby-identifier">character</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">user</span> <span class="ruby-identifier">would</span> <span class="ruby-identifier">have</span> <span class="ruby-identifier">deleted</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">mask</span> <span class="ruby-identifier">hadn</span><span class="ruby-string">&#39;t been in the way.
+            valUnmasked = valUnmasked.substring(0, charIndex) + valUnmasked.substring(charIndex + 1);
+            valAltered = true;
+          }
+
+          // Update values
+          valMasked = maskValue(valUnmasked);
+
+          oldValue = valMasked;
+          oldValueUnmasked = valUnmasked;
+          iElement.val(valMasked);
+          if (valAltered) {
+            // We&#39;</span><span class="ruby-identifier">ve</span> <span class="ruby-identifier">altered</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">raw</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">after</span> <span class="ruby-identifier">it</span><span class="ruby-string">&#39;s been $digest&#39;</span><span class="ruby-identifier">ed</span>, <span class="ruby-identifier">we</span> <span class="ruby-identifier">need</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">$apply</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">new</span> <span class="ruby-identifier">value</span>.
+            <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">$apply</span>(<span class="ruby-identifier">function</span> (){
+              <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">$setViewValue</span>(<span class="ruby-identifier">valUnmasked</span>);
+            });
+          }
+
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">Caret</span> <span class="ruby-constant">Repositioning</span>
+          <span class="ruby-regexp">//</span> <span class="ruby-operator">===</span><span class="ruby-operator">===</span><span class="ruby-operator">===</span><span class="ruby-operator">===</span><span class="ruby-operator">===</span><span class="ruby-operator">===</span>=
+
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">Ensure</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">typing</span> <span class="ruby-identifier">always</span> <span class="ruby-identifier">places</span> <span class="ruby-identifier">caret</span> <span class="ruby-identifier">ahead</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">typed</span> <span class="ruby-identifier">character</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">cases</span> <span class="ruby-identifier">where</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">first</span> <span class="ruby-identifier">char</span> <span class="ruby-identifier">of</span>
+          <span class="ruby-regexp">//</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">input</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">mask</span> <span class="ruby-identifier">char</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">caret</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">placed</span> <span class="ruby-identifier">at</span> <span class="ruby-identifier">the</span> <span class="ruby-value">0</span> <span class="ruby-identifier">position</span>.
+          <span class="ruby-identifier">if</span> (<span class="ruby-identifier">isAddition</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">caretPos</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">caretPosMin</span>)) {
+            <span class="ruby-identifier">caretPos</span> = <span class="ruby-identifier">caretPosMin</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>;
+          }
+
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">caretBumpBack</span>) {
+            <span class="ruby-identifier">caretPos</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span>;
+          }
+
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">Make</span> <span class="ruby-identifier">sure</span> <span class="ruby-identifier">caret</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">within</span> <span class="ruby-identifier">min</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">max</span> <span class="ruby-identifier">position</span> <span class="ruby-identifier">limits</span>
+          <span class="ruby-identifier">caretPos</span> = <span class="ruby-identifier">caretPos</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">caretPosMax</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">caretPosMax</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">caretPos</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">caretPosMin</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">caretPosMin</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">caretPos</span>;
+
+          <span class="ruby-regexp">//</span> <span class="ruby-constant">Scoot</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">caret</span> <span class="ruby-identifier">back</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">forth</span> <span class="ruby-keyword">until</span> <span class="ruby-identifier">it</span><span class="ruby-string">&#39;s in a non-mask position and within min/max position limits
+          while (!isValidCaretPosition(caretPos) &amp;&amp; caretPos &gt; caretPosMin &amp;&amp; caretPos &lt; caretPosMax) {
+            caretPos += caretBumpBack ? -1 : 1;
+          }
+
+          if ((caretBumpBack &amp;&amp; caretPos &lt; caretPosMax) || (isAddition &amp;&amp; !isValidCaretPosition(caretPosOld))) {
+            caretPos++;
+          }
+          oldCaretPosition = caretPos;
+          setCaretPosition(this, caretPos);
+        }
+
+        function isValidCaretPosition(pos){ return maskCaretMap.indexOf(pos) &gt; -1; }
+
+        function getCaretPosition(input){
+          if (!input) return 0;
+          if (input.selectionStart !== undefined) {
+            return input.selectionStart;
+          } else if (document.selection) {
+            // Curse you IE
+            input.focus();
+            var selection = document.selection.createRange();
+            selection.moveStart(&#39;</span><span class="ruby-identifier">character</span><span class="ruby-string">&#39;, input.value ? -input.value.length : 0);
+            return selection.text.length;
+          }
+          return 0;
+        }
+
+        function setCaretPosition(input, pos){
+          if (!input) return 0;
+          if (input.offsetWidth === 0 || input.offsetHeight === 0) {
+            return; // Input&#39;</span><span class="ruby-identifier">s</span> <span class="ruby-identifier">hidden</span>
+          }
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">input</span>.<span class="ruby-identifier">setSelectionRange</span>) {
+            <span class="ruby-identifier">input</span>.<span class="ruby-identifier">focus</span>();
+            <span class="ruby-identifier">input</span>.<span class="ruby-identifier">setSelectionRange</span>(<span class="ruby-identifier">pos</span>, <span class="ruby-identifier">pos</span>);
+          }
+          <span class="ruby-keyword">else</span> <span class="ruby-keyword">if</span> (<span class="ruby-identifier">input</span>.<span class="ruby-identifier">createTextRange</span>) {
+            <span class="ruby-regexp">//</span> <span class="ruby-constant">Curse</span> <span class="ruby-identifier">you</span> <span class="ruby-constant">IE</span>
+            <span class="ruby-identifier">var</span> <span class="ruby-identifier">range</span> = <span class="ruby-identifier">input</span>.<span class="ruby-identifier">createTextRange</span>();
+            <span class="ruby-identifier">range</span>.<span class="ruby-identifier">collapse</span>(<span class="ruby-keyword">true</span>);
+            <span class="ruby-identifier">range</span>.<span class="ruby-identifier">moveEnd</span>(<span class="ruby-string">&#39;character&#39;</span>, <span class="ruby-identifier">pos</span>);
+            <span class="ruby-identifier">range</span>.<span class="ruby-identifier">moveStart</span>(<span class="ruby-string">&#39;character&#39;</span>, <span class="ruby-identifier">pos</span>);
+            <span class="ruby-identifier">range</span>.<span class="ruby-identifier">select</span>();
+          }
+        }
+
+        <span class="ruby-identifier">function</span> <span class="ruby-identifier">getSelectionLength</span>(<span class="ruby-identifier">input</span>){
+          <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">input</span>) <span class="ruby-keyword">return</span> <span class="ruby-value">0</span>;
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">input</span>.<span class="ruby-identifier">selectionStart</span> <span class="ruby-operator">!=</span>= <span class="ruby-identifier">undefined</span>) {
+            <span class="ruby-keyword">return</span> (<span class="ruby-identifier">input</span>.<span class="ruby-identifier">selectionEnd</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">input</span>.<span class="ruby-identifier">selectionStart</span>);
+          }
+          <span class="ruby-keyword">if</span> (<span class="ruby-identifier">document</span>.<span class="ruby-identifier">selection</span>) {
+            <span class="ruby-keyword">return</span> (<span class="ruby-identifier">document</span>.<span class="ruby-identifier">selection</span>.<span class="ruby-identifier">createRange</span>().<span class="ruby-identifier">text</span>.<span class="ruby-identifier">length</span>);
+          }
+          <span class="ruby-keyword">return</span> <span class="ruby-value">0</span>;
+        }
+
+        <span class="ruby-regexp">//</span> <span class="ruby-identifier">https</span><span class="ruby-operator">:</span><span class="ruby-regexp">//</span><span class="ruby-identifier">developer</span>.<span class="ruby-identifier">mozilla</span>.<span class="ruby-identifier">org</span><span class="ruby-operator">/</span><span class="ruby-identifier">en</span><span class="ruby-operator">-</span><span class="ruby-constant">US</span><span class="ruby-operator">/</span><span class="ruby-identifier">docs</span><span class="ruby-operator">/</span><span class="ruby-constant">JavaScript</span><span class="ruby-operator">/</span><span class="ruby-constant">Reference</span><span class="ruby-operator">/</span><span class="ruby-constant">Global_Objects</span><span class="ruby-operator">/</span><span class="ruby-constant">Array</span><span class="ruby-operator">/</span><span class="ruby-identifier">indexOf</span>
+        <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span><span class="ruby-constant">Array</span>.<span class="ruby-identifier">prototype</span>.<span class="ruby-identifier">indexOf</span>) {
+          <span class="ruby-constant">Array</span>.<span class="ruby-identifier">prototype</span>.<span class="ruby-identifier">indexOf</span> = <span class="ruby-identifier">function</span> (<span class="ruby-identifier">searchElement</span> <span class="ruby-regexp">/*, fromIndex */</span>){
+            <span class="ruby-keyword">if</span> (<span class="ruby-identifier">this</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">null</span>) {
+              <span class="ruby-identifier">throw</span> <span class="ruby-identifier">new</span> <span class="ruby-constant">TypeError</span>();
+            }
+            <span class="ruby-identifier">var</span> <span class="ruby-identifier">t</span> = <span class="ruby-constant">Object</span>(<span class="ruby-identifier">this</span>);
+            <span class="ruby-identifier">var</span> <span class="ruby-identifier">len</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;&gt;</span><span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>;
+            <span class="ruby-keyword">if</span> (<span class="ruby-identifier">len</span> <span class="ruby-operator">===</span> <span class="ruby-value">0</span>) {
+              <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>;
+            }
+            <span class="ruby-identifier">var</span> <span class="ruby-identifier">n</span> = <span class="ruby-value">0</span>;
+            <span class="ruby-keyword">if</span> (<span class="ruby-identifier">arguments</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>) {
+              <span class="ruby-identifier">n</span> = <span class="ruby-constant">Number</span>(<span class="ruby-identifier">arguments</span>[<span class="ruby-value">1</span>]);
+              <span class="ruby-keyword">if</span> (<span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span>= <span class="ruby-identifier">n</span>) { <span class="ruby-regexp">//</span> <span class="ruby-identifier">shortcut</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">verifying</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">it</span><span class="ruby-string">&#39;s NaN
+                n = 0;
+              } else if (n !== 0 &amp;&amp; n !== Infinity &amp;&amp; n !== -Infinity) {
+                n = (n &gt; 0 || -1) * Math.floor(Math.abs(n));
+              }
+            }
+            if (n &gt;= len) {
+              return -1;
+            }
+            var k = n &gt;= 0 ? n : Math.max(len - Math.abs(n), 0);
+            for (; k &lt; len; k++) {
+              if (k in t &amp;&amp; t[k] === searchElement) {
+                return k;
+              }
+            }
+            return -1;
+          };
+        }
+
+      };
+    }
+  };
+}
+</span></pre>
+
+<p>]);</p>
+
+<p>/**</p>
+
+<pre> Add a clear button to form inputs to reset their value
+/</pre>
+
+<p>angular.module(&#39;ui.reset&#39;,[]).value(&#39;uiResetConfig&#39;,null).directive(&#39;uiReset&#39;,
+[&#39;uiResetConfig&#39;, function (uiResetConfig) {</p>
+
+<pre>&#39;use strict&#39;;
+
+var resetValue = null;
+if (uiResetConfig !== undefined){
+    resetValue = uiResetConfig;
+}
+return {
+  require: &#39;ngModel&#39;,
+  link: function (scope, elm, attrs, ctrl) {
+    var aElement;
+    aElement = angular.element(&#39;&lt;a class=&quot;ui-reset&quot; /&gt;&#39;);
+    elm.wrap(&#39;&lt;span class=&quot;ui-resetwrap&quot; /&gt;&#39;).after(aElement);
+    aElement.bind(&#39;click&#39;, function (e) {
+      e.preventDefault();
+      scope.$apply(function () {
+        if (attrs.uiReset){
+          ctrl.$setViewValue(scope.$eval(attrs.uiReset));
+        }else{
+          ctrl.$setViewValue(resetValue);
+        }
+        ctrl.$render();
+      });
+    });
+  }
+};</pre>
+
+<p>}]);</p>
+
+<p>/**</p>
+
+<pre> Set a $uiRoute boolean to see if the current route matches
+/</pre>
+
+<p>angular.module(&#39;ui.route&#39;, []).directive(&#39;uiRoute&#39;,
+[&#39;$location&#39;, &#39;$parse&#39;, function ($location, $parse) {</p>
+
+<pre>&#39;use strict&#39;;
+
+return {
+  restrict: &#39;AC&#39;,
+  scope: true,
+  compile: function(tElement, tAttrs) {
+    var useProperty;
+    if (tAttrs.uiRoute) {
+      useProperty = &#39;uiRoute&#39;;
+    } else if (tAttrs.ngHref) {
+      useProperty = &#39;ngHref&#39;;
+    } else if (tAttrs.href) {
+      useProperty = &#39;href&#39;;
+    } else {
+      throw new Error(&#39;uiRoute missing a route or href property on &#39; + tElement[0]);
+    }
+    return function ($scope, elm, attrs) {
+      var modelSetter = $parse(attrs.ngModel || attrs.routeModel || &#39;$uiRoute&#39;).assign;
+      var watcher = angular.noop;
+
+      // Used by href and ngHref
+      function staticWatcher(newVal) {
+        var hash = newVal.indexOf(&#39;#&#39;);
+        if (hash &gt; -1){
+          newVal = newVal.substr(hash + 1);
+        }
+        watcher = function watchHref() {
+          modelSetter($scope, ($location.path().indexOf(newVal) &gt; -1));
+        };
+        watcher();
+      }
+      // Used by uiRoute
+      function regexWatcher(newVal) {
+        var hash = newVal.indexOf(&#39;#&#39;);
+        if (hash &gt; -1){
+          newVal = newVal.substr(hash + 1);
+        }
+        watcher = function watchRegex() {
+          var regexp = new RegExp(&#39;^&#39; + newVal + &#39;$&#39;, [&#39;i&#39;]);
+          modelSetter($scope, regexp.test($location.path()));
+        };
+        watcher();
+      }
+
+      switch (useProperty) {
+        case &#39;uiRoute&#39;:
+          // if uiRoute={{}} this will be undefined, otherwise it will have a value and $observe() never gets triggered
+          if (attrs.uiRoute){
+            regexWatcher(attrs.uiRoute);
+          }else{
+            attrs.$observe(&#39;uiRoute&#39;, regexWatcher);
+          }
+          break;
+        case &#39;ngHref&#39;:
+          // Setup watcher() every time ngHref changes
+          if (attrs.ngHref){
+            staticWatcher(attrs.ngHref);
+          }else{
+            attrs.$observe(&#39;ngHref&#39;, staticWatcher);
+          }
+          break;
+        case &#39;href&#39;:
+          // Setup watcher()
+          staticWatcher(attrs.href);
+      }
+
+      $scope.$on(&#39;$routeChangeSuccess&#39;, function(){
+        watcher();
+      });
+
+      //Added for compatibility with ui-router
+      $scope.$on(&#39;$stateChangeSuccess&#39;, function(){
+        watcher();
+      });
+    };
+  }
+};</pre>
+
+<p>}]);</p>
+
+<p>angular.module(&#39;ui.scroll.jqlite&#39;,
+[&#39;ui.scroll&#39;]).service(&#39;jqLiteExtras&#39;, [</p>
+
+<pre>&#39;$log&#39;, &#39;$window&#39;, function(console, window) {
+  &#39;use strict&#39;;
+
+  return {
+    registerFor: function(element) {
+      var convertToPx, css, getMeasurements, getStyle, getWidthHeight, isWindow, scrollTo;
+      css = angular.element.prototype.css;
+      element.prototype.css = function(name, value) {
+        var elem, self;
+        self = this;
+        elem = self[0];
+        if (!(!elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style)) {
+          return css.call(self, name, value);
+        }
+      };
+      isWindow = function(obj) {
+        return obj &amp;&amp; obj.document &amp;&amp; obj.location &amp;&amp; obj.alert &amp;&amp; obj.setInterval;
+      };
+      scrollTo = function(self, direction, value) {
+        var elem, method, preserve, prop, _ref;
+        elem = self[0];
+        _ref = {
+          top: [&#39;scrollTop&#39;, &#39;pageYOffset&#39;, &#39;scrollLeft&#39;],
+          left: [&#39;scrollLeft&#39;, &#39;pageXOffset&#39;, &#39;scrollTop&#39;]
+        }[direction], method = _ref[0], prop = _ref[1], preserve = _ref[2];
+        if (isWindow(elem)) {
+          if (angular.isDefined(value)) {
+            return elem.scrollTo(self[preserve].call(self), value);
+          } else {
+            if (prop in elem) {
+              return elem[prop];
+            } else {
+              return elem.document.documentElement[method];
+            }
+          }
+        } else {
+          if (angular.isDefined(value)) {
+            return elem[method] = value;
+          } else {
+            return elem[method];
+          }
+        }
+      };
+      if (window.getComputedStyle) {
+        getStyle = function(elem) {
+          return window.getComputedStyle(elem, null);
+        };
+        convertToPx = function(elem, value) {
+          return parseFloat(value);
+        };
+      } else {
+        getStyle = function(elem) {
+          return elem.currentStyle;
+        };
+        convertToPx = function(elem, value) {
+          var core_pnum, left, result, rnumnonpx, rs, rsLeft, style;
+          core_pnum = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source;
+          rnumnonpx = new RegExp(&#39;^(&#39; + core_pnum + &#39;)(?!px)[a-z%]+$&#39;, &#39;i&#39;);
+          if (!rnumnonpx.test(value)) {
+            return parseFloat(value);
+          } else {
+            style = elem.style;
+            left = style.left;
+            rs = elem.runtimeStyle;
+            rsLeft = rs &amp;&amp; rs.left;
+            if (rs) {
+              rs.left = style.left;
+            }
+            style.left = value;
+            result = style.pixelLeft;
+            style.left = left;
+            if (rsLeft) {
+              rs.left = rsLeft;
+            }
+            return result;
+          }
+        };
+      }
+      getMeasurements = function(elem, measure) {
+        var base, borderA, borderB, computedMarginA, computedMarginB, computedStyle, dirA, dirB, marginA, marginB, paddingA, paddingB, _ref;
+        if (isWindow(elem)) {
+          base = document.documentElement[{
+            height: &#39;clientHeight&#39;,
+            width: &#39;clientWidth&#39;
+          }[measure]];
+          return {
+            base: base,
+            padding: 0,
+            border: 0,
+            margin: 0
+          };
+        }
+        _ref = {
+          width: [elem.offsetWidth, &#39;Left&#39;, &#39;Right&#39;],
+          height: [elem.offsetHeight, &#39;Top&#39;, &#39;Bottom&#39;]
+        }[measure], base = _ref[0], dirA = _ref[1], dirB = _ref[2];
+        computedStyle = getStyle(elem);
+        paddingA = convertToPx(elem, computedStyle[&#39;padding&#39; + dirA]) || 0;
+        paddingB = convertToPx(elem, computedStyle[&#39;padding&#39; + dirB]) || 0;
+        borderA = convertToPx(elem, computedStyle[&#39;border&#39; + dirA + &#39;Width&#39;]) || 0;
+        borderB = convertToPx(elem, computedStyle[&#39;border&#39; + dirB + &#39;Width&#39;]) || 0;
+        computedMarginA = computedStyle[&#39;margin&#39; + dirA];
+        computedMarginB = computedStyle[&#39;margin&#39; + dirB];
+        marginA = convertToPx(elem, computedMarginA) || 0;
+        marginB = convertToPx(elem, computedMarginB) || 0;
+        return {
+          base: base,
+          padding: paddingA + paddingB,
+          border: borderA + borderB,
+          margin: marginA + marginB
+        };
+      };
+      getWidthHeight = function(elem, direction, measure) {
+        var computedStyle, measurements, result;
+        measurements = getMeasurements(elem, direction);
+        if (measurements.base &gt; 0) {
+          return {
+            base: measurements.base - measurements.padding - measurements.border,
+            outer: measurements.base,
+            outerfull: measurements.base + measurements.margin
+          }[measure];
+        } else {
+          computedStyle = getStyle(elem);
+          result = computedStyle[direction];
+          if (result &lt; 0 || result === null) {
+            result = elem.style[direction] || 0;
+          }
+          result = parseFloat(result) || 0;
+          return {
+            base: result - measurements.padding - measurements.border,
+            outer: result,
+            outerfull: result + measurements.padding + measurements.border + measurements.margin
+          }[measure];
+        }
+      };
+      return angular.forEach({
+        before: function(newElem) {
+          var children, elem, i, parent, self, _i, _ref;
+          self = this;
+          elem = self[0];
+          parent = self.parent();
+          children = parent.contents();
+          if (children[0] === elem) {
+            return parent.prepend(newElem);
+          } else {
+            for (i = _i = 1, _ref = children.length - 1; 1 &lt;= _ref ? _i &lt;= _ref : _i &gt;= _ref; i = 1 &lt;= _ref ? ++_i : --_i) {
+              if (children[i] === elem) {
+                angular.element(children[i - 1]).after(newElem);
+                return;
+              }
+            }
+            throw new Error(&#39;invalid DOM structure &#39; + elem.outerHTML);
+          }
+        },
+        height: function(value) {
+          var self;
+          self = this;
+          if (angular.isDefined(value)) {
+            if (angular.isNumber(value)) {
+              value = value + &#39;px&#39;;
+            }
+            return css.call(self, &#39;height&#39;, value);
+          } else {
+            return getWidthHeight(this[0], &#39;height&#39;, &#39;base&#39;);
+          }
+        },
+        outerHeight: function(option) {
+          return getWidthHeight(this[0], &#39;height&#39;, option ? &#39;outerfull&#39; : &#39;outer&#39;);
+        },
+        /*
+        UIScroller no longer relies on jQuery method offset. The jQLite implementation of the method
+        is kept here just for the reference. Also the offset setter method was never implemented
+         /
+
+        offset: function(value) {
+          var box, doc, docElem, elem, self, win;
+          self = this;
+          if (arguments.length) {
+            if (value === void 0) {
+              return self;
+            } else {
+              throw new Error(&#39;offset setter method is not implemented&#39;);
+            }
+          }
+          box = {
+            top: 0,
+            left: 0
+          };
+          elem = self[0];
+          doc = elem &amp;&amp; elem.ownerDocument;
+          if (!doc) {
+            return;
+          }
+          docElem = doc.documentElement;
+          if (elem.getBoundingClientRect != null) {
+            box = elem.getBoundingClientRect();
+          }
+          win = doc.defaultView || doc.parentWindow;
+          return {
+            top: box.top + (win.pageYOffset || docElem.scrollTop) - (docElem.clientTop || 0),
+            left: box.left + (win.pageXOffset || docElem.scrollLeft) - (docElem.clientLeft || 0)
+          };
+        },
+        scrollTop: function(value) {
+          return scrollTo(this, &#39;top&#39;, value);
+        },
+        scrollLeft: function(value) {
+          return scrollTo(this, &#39;left&#39;, value);
+        }
+      }, function(value, key) {
+        if (!element.prototype[key]) {
+          return element.prototype[key] = value;
+        }
+      });
+    }
+  };
+}</pre>
+
+<p>]).run([</p>
+
+<pre>&#39;$log&#39;, &#39;$window&#39;, &#39;jqLiteExtras&#39;, function(console, window, jqLiteExtras) {
+  &#39;use strict&#39;;
+
+  if (!window.jQuery) {
+    return jqLiteExtras.registerFor(angular.element);
+  }
+}</pre>
+
+<p>]);</p>
+
+<p>/* //# sourceURL=src/scripts/ui-scroll-jqlite.js</p>
+
+<pre>/</pre>
+
+<p>/*</p>
+
+<pre>globals: angular, window
+
+List of used element methods available in JQuery but not in JQuery Lite
+
+element.before(elem)
+element.height()
+element.outerHeight(true)
+element.height(value) = only for Top/Bottom padding elements
+element.scrollTop()
+element.scrollTop(value)
+ /</pre>
+
+<p>angular.module(&#39;ui.scroll&#39;,
+[]).directive(&#39;uiScrollViewport&#39;, [</p>
+
+<pre>&#39;$log&#39;, function() {
+  &#39;use strict&#39;;
+
+  return {
+    controller: [
+      &#39;$scope&#39;, &#39;$element&#39;, function(scope, element) {
+        this.viewport = element;
+        return this;
+      }
+    ]
+  };
+}</pre>
+
+<p>]).directive(&#39;uiScroll&#39;, [</p>
+
+<pre>&#39;$log&#39;, &#39;$injector&#39;, &#39;$rootScope&#39;, &#39;$timeout&#39;, function(console, $injector, $rootScope, $timeout) {
+  &#39;use strict&#39;;
+
+  return {
+    require: [&#39;?^uiScrollViewport&#39;],
+    transclude: &#39;element&#39;,
+    priority: 1000,
+    terminal: true,
+    compile: function(elementTemplate, attr, linker) {
+      return function($scope, element, $attr, controllers) {
+        var adapter, adapterOnScope, adjustBuffer, adjustRowHeight, applyUpdate, bof, bottomVisiblePos, buffer, bufferPadding, bufferSize, builder, clipBottom, clipTop, datasource, datasourceName, doAdjustment, doDelete, doInsert, doUpdate, enqueueFetch, eof, eventListener, fetch, finalize, first, getValueChain, hideElementBeforeAppend, insert, isDatasourceValid, itemName, loading, log, match, next, pending, reload, removeFromBuffer, resizeAndScrollHandler, ridActual, scrollHeight, setValueChain, shouldLoadBottom, shouldLoadTop, showElementAfterRender, topVisible, topVisiblePos, viewport, viewportScope, wheelHandler;
+        log = console.debug || console.log;
+        match = $attr.uiScroll.match(/^\s*(\w+)\s+in\s+([\w\.]+)\s*$/);
+        if (!match) {
+          throw new Error(&#39;Expected uiScroll in form of \&#39;_item_ in _datasource_\&#39; but got \&#39;&#39; + $attr.uiScroll + &#39;\&#39;&#39;);
+        }
+        itemName = match[1];
+        datasourceName = match[2];
+        getValueChain = function(targetScope, target) {
+          var chain;
+          if (!targetScope) {
+            return;
+          }
+          chain = target.match(/^([\w]+)\.(.+)$/);
+          if (!chain || chain.length !== 3) {
+            return targetScope[target];
+          }
+          return getValueChain(targetScope[chain[1]], chain[2]);
+        };
+        setValueChain = function(targetScope, target, value, doNotSet) {
+          var chain;
+          if (!targetScope || !target) {
+            return;
+          }
+          if (!(chain = target.match(/^([\w]+)\.(.+)$/))) {
+            if (target.indexOf(&#39;.&#39;) !== -1) {
+              return;
+            }
+          }
+          if (!chain || chain.length !== 3) {
+            if (!angular.isObject(targetScope[target]) &amp;&amp; !doNotSet) {
+              return targetScope[target] = value;
+            }
+            return targetScope[target] = value;
+          }
+          if (!angular.isObject(targetScope[chain[1]]) &amp;&amp; !doNotSet) {
+            targetScope[chain[1]] = {};
+          }
+          return setValueChain(targetScope[chain[1]], chain[2], value, doNotSet);
+        };
+        datasource = getValueChain($scope, datasourceName);
+        isDatasourceValid = function() {
+          return angular.isObject(datasource) &amp;&amp; typeof datasource.get === &#39;function&#39;;
+        };
+        if (!isDatasourceValid()) {
+          datasource = $injector.get(datasourceName);
+          if (!isDatasourceValid()) {
+            throw new Error(&#39;&#39; + datasourceName + &#39; is not a valid datasource&#39;);
+          }
+        }
+        bufferSize = Math.max(3, +$attr.bufferSize || 10);
+        bufferPadding = function() {
+          return viewport.outerHeight() * Math.max(0.1, +$attr.padding || 0.1);
+        };
+        scrollHeight = function(elem) {
+          var _ref;
+          return (_ref = elem[0].scrollHeight) != null ? _ref : elem[0].document.documentElement.scrollHeight;
+        };
+        builder = null;
+        linker($scope.$new(), function(template) {
+          var bottomPadding, createPadding, padding, repeaterType, topPadding, viewport;
+          repeaterType = template[0].localName;
+          if (repeaterType === &#39;dl&#39;) {
+            throw new Error(&#39;ui-scroll directive does not support &lt;&#39; + template[0].localName + &#39;&gt; as a repeating tag: &#39; + template[0].outerHTML);
+          }
+          if (repeaterType !== &#39;li&#39; &amp;&amp; repeaterType !== &#39;tr&#39;) {
+            repeaterType = &#39;div&#39;;
+          }
+          viewport = controllers[0] &amp;&amp; controllers[0].viewport ? controllers[0].viewport : angular.element(window);
+          viewport.css({
+            &#39;overflow-y&#39;: &#39;auto&#39;,
+            &#39;display&#39;: &#39;block&#39;
+          });
+          padding = function(repeaterType) {
+            var div, result, table;
+            switch (repeaterType) {
+              case &#39;tr&#39;:
+                table = angular.element(&#39;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#39;);
+                div = table.find(&#39;div&#39;);
+                result = table.find(&#39;tr&#39;);
+                result.paddingHeight = function() {
+                  return div.height.apply(div, arguments);
+                };
+                return result;
+              default:
+                result = angular.element(&#39;&lt;&#39; + repeaterType + &#39;&gt;&lt;/&#39; + repeaterType + &#39;&gt;&#39;);
+                result.paddingHeight = result.height;
+                return result;
+            }
+          };
+          createPadding = function(padding, element, direction) {
+            element[{
+              top: &#39;before&#39;,
+              bottom: &#39;after&#39;
+            }[direction]](padding);
+            return {
+              paddingHeight: function() {
+                return padding.paddingHeight.apply(padding, arguments);
+              },
+              insert: function(element) {
+                return padding[{
+                  top: &#39;after&#39;,
+                  bottom: &#39;before&#39;
+                }[direction]](element);
+              }
+            };
+          };
+          topPadding = createPadding(padding(repeaterType), element, &#39;top&#39;);
+          bottomPadding = createPadding(padding(repeaterType), element, &#39;bottom&#39;);
+          $scope.$on(&#39;$destroy&#39;, template.remove);
+          return builder = {
+            viewport: viewport,
+            topPadding: topPadding.paddingHeight,
+            bottomPadding: bottomPadding.paddingHeight,
+            append: bottomPadding.insert,
+            prepend: topPadding.insert,
+            bottomDataPos: function() {
+              return scrollHeight(viewport) - bottomPadding.paddingHeight();
+            },
+            topDataPos: function() {
+              return topPadding.paddingHeight();
+            }
+          };
+        });
+        viewport = builder.viewport;
+        viewportScope = viewport.scope() || $rootScope;
+        topVisible = function(item) {
+          adapter.topVisible = item.scope[itemName];
+          adapter.topVisibleElement = item.element;
+          adapter.topVisibleScope = item.scope;
+          if ($attr.topVisible) {
+            setValueChain(viewportScope, $attr.topVisible, adapter.topVisible);
+          }
+          if ($attr.topVisibleElement) {
+            setValueChain(viewportScope, $attr.topVisibleElement, adapter.topVisibleElement);
+          }
+          if ($attr.topVisibleScope) {
+            setValueChain(viewportScope, $attr.topVisibleScope, adapter.topVisibleScope);
+          }
+          if (typeof datasource.topVisible === &#39;function&#39;) {
+            return datasource.topVisible(item);
+          }
+        };
+        loading = function(value) {
+          adapter.isLoading = value;
+          if ($attr.isLoading) {
+            setValueChain($scope, $attr.isLoading, value);
+          }
+          if (typeof datasource.loading === &#39;function&#39;) {
+            return datasource.loading(value);
+          }
+        };
+        ridActual = 0;
+        first = 1;
+        next = 1;
+        buffer = [];
+        pending = [];
+        eof = false;
+        bof = false;
+        removeFromBuffer = function(start, stop) {
+          var i, _i;
+          for (i = _i = start; start &lt;= stop ? _i &lt; stop : _i &gt; stop; i = start &lt;= stop ? ++_i : --_i) {
+            buffer[i].scope.$destroy();
+            buffer[i].element.remove();
+          }
+          return buffer.splice(start, stop - start);
+        };
+        reload = function() {
+          ridActual++;
+          first = 1;
+          next = 1;
+          removeFromBuffer(0, buffer.length);
+          builder.topPadding(0);
+          builder.bottomPadding(0);
+          pending = [];
+          eof = false;
+          bof = false;
+          return adjustBuffer(ridActual);
+        };
+        bottomVisiblePos = function() {
+          return viewport.scrollTop() + viewport.outerHeight();
+        };
+        topVisiblePos = function() {
+          return viewport.scrollTop();
+        };
+        shouldLoadBottom = function() {
+          return !eof &amp;&amp; builder.bottomDataPos() &lt; bottomVisiblePos() + bufferPadding();
+        };
+        clipBottom = function() {
+          var bottomHeight, i, item, itemHeight, itemTop, newRow, overage, rowTop, _i, _ref;
+          bottomHeight = 0;
+          overage = 0;
+          for (i = _i = _ref = buffer.length - 1; _ref &lt;= 0 ? _i &lt;= 0 : _i &gt;= 0; i = _ref &lt;= 0 ? ++_i : --_i) {
+            item = buffer[i];
+            itemTop = item.element.offset().top;
+            newRow = rowTop !== itemTop;
+            rowTop = itemTop;
+            if (newRow) {
+              itemHeight = item.element.outerHeight(true);
+            }
+            if (builder.bottomDataPos() - bottomHeight - itemHeight &gt; bottomVisiblePos() + bufferPadding()) {
+              if (newRow) {
+                bottomHeight += itemHeight;
+              }
+              overage++;
+              eof = false;
+            } else {
+              if (newRow) {
+                break;
+              }
+              overage++;
+            }
+          }
+          if (overage &gt; 0) {
+            builder.bottomPadding(builder.bottomPadding() + bottomHeight);
+            removeFromBuffer(buffer.length - overage, buffer.length);
+            return next -= overage;
+          }
+        };
+        shouldLoadTop = function() {
+          return !bof &amp;&amp; (builder.topDataPos() &gt; topVisiblePos() - bufferPadding());
+        };
+        clipTop = function() {
+          var item, itemHeight, itemTop, newRow, overage, rowTop, topHeight, _i, _len;
+          topHeight = 0;
+          overage = 0;
+          for (_i = 0, _len = buffer.length; _i &lt; _len; _i++) {
+            item = buffer[_i];
+            itemTop = item.element.offset().top;
+            newRow = rowTop !== itemTop;
+            rowTop = itemTop;
+            if (newRow) {
+              itemHeight = item.element.outerHeight(true);
+            }
+            if (builder.topDataPos() + topHeight + itemHeight &lt; topVisiblePos() - bufferPadding()) {
+              if (newRow) {
+                topHeight += itemHeight;
+              }
+              overage++;
+              bof = false;
+            } else {
+              if (newRow) {
+                break;
+              }
+              overage++;
+            }
+          }
+          if (overage &gt; 0) {
+            builder.topPadding(builder.topPadding() + topHeight);
+            removeFromBuffer(0, overage);
+            return first += overage;
+          }
+        };
+        enqueueFetch = function(rid, direction) {
+          if (!adapter.isLoading) {
+            loading(true);
+          }
+          if (pending.push(direction) === 1) {
+            return fetch(rid);
+          }
+        };
+        hideElementBeforeAppend = function(element) {
+          element.displayTemp = element.css(&#39;display&#39;);
+          return element.css(&#39;display&#39;, &#39;none&#39;);
+        };
+        showElementAfterRender = function(element) {
+          if (element.hasOwnProperty(&#39;displayTemp&#39;)) {
+            return element.css(&#39;display&#39;, element.displayTemp);
+          }
+        };
+        insert = function(index, item) {
+          var itemScope, toBeAppended, wrapper;
+          itemScope = $scope.$new();
+          itemScope[itemName] = item;
+          toBeAppended = index &gt; first;
+          itemScope.$index = index;
+          if (toBeAppended) {
+            itemScope.$index--;
+          }
+          wrapper = {
+            scope: itemScope
+          };
+          linker(itemScope, function(clone) {
+            wrapper.element = clone;
+            if (toBeAppended) {
+              if (index === next) {
+                hideElementBeforeAppend(clone);
+                builder.append(clone);
+                return buffer.push(wrapper);
+              } else {
+                buffer[index - first].element.after(clone);
+                return buffer.splice(index - first + 1, 0, wrapper);
+              }
+            } else {
+              hideElementBeforeAppend(clone);
+              builder.prepend(clone);
+              return buffer.unshift(wrapper);
+            }
+          });
+          return {
+            appended: toBeAppended,
+            wrapper: wrapper
+          };
+        };
+        adjustRowHeight = function(appended, wrapper) {
+          var newHeight;
+          if (appended) {
+            return builder.bottomPadding(Math.max(0, builder.bottomPadding() - wrapper.element.outerHeight(true)));
+          } else {
+            newHeight = builder.topPadding() - wrapper.element.outerHeight(true);
+            if (newHeight &gt;= 0) {
+              return builder.topPadding(newHeight);
+            } else {
+              return viewport.scrollTop(viewport.scrollTop() + wrapper.element.outerHeight(true));
+            }
+          }
+        };
+        doAdjustment = function(rid, finalize) {
+          var item, itemHeight, itemTop, newRow, rowTop, topHeight, _i, _len, _results;
+          if (shouldLoadBottom()) {
+            enqueueFetch(rid, true);
+          } else {
+            if (shouldLoadTop()) {
+              enqueueFetch(rid, false);
+            }
+          }
+          if (finalize) {
+            finalize(rid);
+          }
+          if (pending.length === 0) {
+            topHeight = 0;
+            _results = [];
+            for (_i = 0, _len = buffer.length; _i &lt; _len; _i++) {
+              item = buffer[_i];
+              itemTop = item.element.offset().top;
+              newRow = rowTop !== itemTop;
+              rowTop = itemTop;
+              if (newRow) {
+                itemHeight = item.element.outerHeight(true);
+              }
+              if (newRow &amp;&amp; (builder.topDataPos() + topHeight + itemHeight &lt; topVisiblePos())) {
+                _results.push(topHeight += itemHeight);
+              } else {
+                if (newRow) {
+                  topVisible(item);
+                }
+                break;
+              }
+            }
+            return _results;
+          }
+        };
+        adjustBuffer = function(rid, newItems, finalize) {
+          if (newItems &amp;&amp; newItems.length) {
+            return $timeout(function() {
+              var elt, itemTop, row, rowTop, rows, _i, _j, _len, _len1;
+              rows = [];
+              for (_i = 0, _len = newItems.length; _i &lt; _len; _i++) {
+                row = newItems[_i];
+                elt = row.wrapper.element;
+                showElementAfterRender(elt);
+                itemTop = elt.offset().top;
+                if (rowTop !== itemTop) {
+                  rows.push(row);
+                  rowTop = itemTop;
+                }
+              }
+              for (_j = 0, _len1 = rows.length; _j &lt; _len1; _j++) {
+                row = rows[_j];
+                adjustRowHeight(row.appended, row.wrapper);
+              }
+              return doAdjustment(rid, finalize);
+            });
+          } else {
+            return doAdjustment(rid, finalize);
+          }
+        };
+        finalize = function(rid, newItems) {
+          return adjustBuffer(rid, newItems, function() {
+            pending.shift();
+            if (pending.length === 0) {
+              return loading(false);
+            } else {
+              return fetch(rid);
+            }
+          });
+        };
+        fetch = function(rid) {
+          var direction;
+          direction = pending[0];
+          if (direction) {
+            if (buffer.length &amp;&amp; !shouldLoadBottom()) {
+              return finalize(rid);
+            } else {
+              return datasource.get(next, bufferSize, function(result) {
+                var item, newItems, _i, _len;
+                if ((rid &amp;&amp; rid !== ridActual) || $scope.$$destroyed) {
+                  return;
+                }
+                newItems = [];
+                if (result.length &lt; bufferSize) {
+                  eof = true;
+                  builder.bottomPadding(0);
+                }
+                if (result.length &gt; 0) {
+                  clipTop();
+                  for (_i = 0, _len = result.length; _i &lt; _len; _i++) {
+                    item = result[_i];
+                    newItems.push(insert(++next, item));
+                  }
+                }
+                return finalize(rid, newItems);
+              });
+            }
+          } else {
+            if (buffer.length &amp;&amp; !shouldLoadTop()) {
+              return finalize(rid);
+            } else {
+              return datasource.get(first - bufferSize, bufferSize, function(result) {
+                var i, newItems, _i, _ref;
+                if ((rid &amp;&amp; rid !== ridActual) || $scope.$$destroyed) {
+                  return;
+                }
+                newItems = [];
+                if (result.length &lt; bufferSize) {
+                  bof = true;
+                  builder.topPadding(0);
+                }
+                if (result.length &gt; 0) {
+                  if (buffer.length) {
+                    clipBottom();
+                  }
+                  for (i = _i = _ref = result.length - 1; _ref &lt;= 0 ? _i &lt;= 0 : _i &gt;= 0; i = _ref &lt;= 0 ? ++_i : --_i) {
+                    newItems.unshift(insert(--first, result[i]));
+                  }
+                }
+                return finalize(rid, newItems);
+              });
+            }
+          }
+        };
+        resizeAndScrollHandler = function() {
+          if (!$rootScope.$$phase &amp;&amp; !adapter.isLoading) {
+            adjustBuffer();
+            return $scope.$apply();
+          }
+        };
+        wheelHandler = function(event) {
+          var scrollTop, yMax;
+          scrollTop = viewport[0].scrollTop;
+          yMax = viewport[0].scrollHeight - viewport[0].clientHeight;
+          if ((scrollTop === 0 &amp;&amp; !bof) || (scrollTop === yMax &amp;&amp; !eof)) {
+            return event.preventDefault();
+          }
+        };
+        viewport.bind(&#39;resize&#39;, resizeAndScrollHandler);
+        viewport.bind(&#39;scroll&#39;, resizeAndScrollHandler);
+        viewport.bind(&#39;mousewheel&#39;, wheelHandler);
+        $scope.$watch(datasource.revision, reload);
+        if (datasource.scope) {
+          eventListener = datasource.scope.$new();
+        } else {
+          eventListener = $scope.$new();
+        }
+        $scope.$on(&#39;$destroy&#39;, function() {
+          var item, _i, _len;
+          for (_i = 0, _len = buffer.length; _i &lt; _len; _i++) {
+            item = buffer[_i];
+            item.scope.$destroy();
+            item.element.remove();
+          }
+          viewport.unbind(&#39;resize&#39;, resizeAndScrollHandler);
+          viewport.unbind(&#39;scroll&#39;, resizeAndScrollHandler);
+          return viewport.unbind(&#39;mousewheel&#39;, wheelHandler);
+        });
+        adapter = {};
+        adapter.isLoading = false;
+        applyUpdate = function(wrapper, newItems) {
+          var i, inserted, item, ndx, newItem, oldItemNdx, _i, _j, _k, _len, _len1, _len2;
+          inserted = [];
+          if (angular.isArray(newItems)) {
+            if (newItems.length) {
+              if (newItems.length === 1 &amp;&amp; newItems[0] === wrapper.scope[itemName]) {
+                return inserted;
+              } else {
+                ndx = wrapper.scope.$index;
+                if (ndx &gt; first) {
+                  oldItemNdx = ndx - first;
+                } else {
+                  oldItemNdx = 1;
+                }
+                for (i = _i = 0, _len = newItems.length; _i &lt; _len; i = ++_i) {
+                  newItem = newItems[i];
+                  inserted.push(insert(ndx + i, newItem));
+                }
+                removeFromBuffer(oldItemNdx, oldItemNdx + 1);
+                for (i = _j = 0, _len1 = buffer.length; _j &lt; _len1; i = ++_j) {
+                  item = buffer[i];
+                  item.scope.$index = first + i;
+                }
+              }
+            } else {
+              removeFromBuffer(wrapper.scope.$index - first, wrapper.scope.$index - first + 1);
+              next--;
+              for (i = _k = 0, _len2 = buffer.length; _k &lt; _len2; i = ++_k) {
+                item = buffer[i];
+                item.scope.$index = first + i;
+              }
+            }
+          }
+          return inserted;
+        };
+        adapter.applyUpdates = function(arg1, arg2) {
+          var inserted, wrapper, _i, _len, _ref, _ref1;
+          inserted = [];
+          ridActual++;
+          if (angular.isFunction(arg1)) {
+            _ref = buffer.slice(0);
+            for (_i = 0, _len = _ref.length; _i &lt; _len; _i++) {
+              wrapper = _ref[_i];
+              inserted.concat(inserted, applyUpdate(wrapper, arg1(wrapper.scope[itemName], wrapper.scope, wrapper.element)));
+            }
+          } else {
+            if (arg1 % 1 === 0) {
+              if ((0 &lt;= (_ref1 = arg1 - first - 1) &amp;&amp; _ref1 &lt; buffer.length)) {
+                inserted = applyUpdate(buffer[arg1 - first], arg2);
+              }
+            } else {
+              throw new Error(&#39;applyUpdates - &#39; + arg1 + &#39; is not a valid index or outside of range&#39;);
+            }
+          }
+          return adjustBuffer(ridActual, inserted);
+        };
+        if ($attr.adapter) {
+          adapterOnScope = getValueChain($scope, $attr.adapter);
+          if (!adapterOnScope) {
+            setValueChain($scope, $attr.adapter, {});
+            adapterOnScope = getValueChain($scope, $attr.adapter);
+          }
+          angular.extend(adapterOnScope, adapter);
+          adapter = adapterOnScope;
+        }
+        doUpdate = function(locator, newItem) {
+          var wrapper, _fn, _i, _len, _ref;
+          if (angular.isFunction(locator)) {
+            _fn = function(wrapper) {
+              return locator(wrapper.scope);
+            };
+            for (_i = 0, _len = buffer.length; _i &lt; _len; _i++) {
+              wrapper = buffer[_i];
+              _fn(wrapper);
+            }
+          } else {
+            if ((0 &lt;= (_ref = locator - first - 1) &amp;&amp; _ref &lt; buffer.length)) {
+              buffer[locator - first - 1].scope[itemName] = newItem;
+            }
+          }
+          return null;
+        };
+        doDelete = function(locator) {
+          var i, item, temp, wrapper, _fn, _i, _j, _k, _len, _len1, _len2, _ref;
+          if (angular.isFunction(locator)) {
+            temp = [];
+            for (_i = 0, _len = buffer.length; _i &lt; _len; _i++) {
+              item = buffer[_i];
+              temp.unshift(item);
+            }
+            _fn = function(wrapper) {
+              if (locator(wrapper.scope)) {
+                removeFromBuffer(temp.length - 1 - i, temp.length - i);
+                return next--;
+              }
+            };
+            for (i = _j = 0, _len1 = temp.length; _j &lt; _len1; i = ++_j) {
+              wrapper = temp[i];
+              _fn(wrapper);
+            }
+          } else {
+            if ((0 &lt;= (_ref = locator - first - 1) &amp;&amp; _ref &lt; buffer.length)) {
+              removeFromBuffer(locator - first - 1, locator - first);
+              next--;
+            }
+          }
+          for (i = _k = 0, _len2 = buffer.length; _k &lt; _len2; i = ++_k) {
+            item = buffer[i];
+            item.scope.$index = first + i;
+          }
+          return adjustBuffer();
+        };
+        doInsert = function(locator, item) {
+          var i, inserted, _i, _len, _ref;
+          inserted = [];
+          if (angular.isFunction(locator)) {
+            throw new Error(&#39;not implemented - Insert with locator function&#39;);
+          } else {
+            if ((0 &lt;= (_ref = locator - first - 1) &amp;&amp; _ref &lt; buffer.length)) {
+              inserted.push(insert(locator, item));
+              next++;
+            }
+          }
+          for (i = _i = 0, _len = buffer.length; _i &lt; _len; i = ++_i) {
+            item = buffer[i];
+            item.scope.$index = first + i;
+          }
+          return adjustBuffer(null, inserted);
+        };
+        eventListener.$on(&#39;insert.item&#39;, function(event, locator, item) {
+          return doInsert(locator, item);
+        });
+        eventListener.$on(&#39;update.items&#39;, function(event, locator, newItem) {
+          return doUpdate(locator, newItem);
+        });
+        return eventListener.$on(&#39;delete.items&#39;, function(event, locator) {
+          return doDelete(locator);
+        });
+      };
+    }
+  };
+}</pre>
+
+<p>]);</p>
+
+<p>/* //# sourceURL=src/scripts/ui-scroll.js</p>
+
+<pre>/</pre>
+
+<p>/**</p>
+
+<pre class="ruby"> <span class="ruby-constant">Adds</span> <span class="ruby-identifier">a</span> <span class="ruby-string">&#39;ui-scrollfix&#39;</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">element</span> <span class="ruby-keyword">when</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">page</span> <span class="ruby-identifier">scrolls</span> <span class="ruby-identifier">past</span> <span class="ruby-identifier">it</span><span class="ruby-string">&#39;s position.
+ @param [offset] {int} optional Y-offset to override the detected offset.
+   Takes 300 (absolute) or -300 or +300 (relative to detected)
+/
+</span></pre>
+
+<p>angular.module(&#39;ui.scrollfix&#39;,[]).directive(&#39;uiScrollfix&#39;,
+[&#39;$window&#39;, function ($window) {</p>
+
+<pre>&#39;use strict&#39;;
+
+function getWindowScrollTop() {
+  if (angular.isDefined($window.pageYOffset)) {
+    return $window.pageYOffset;
+  } else {
+    var iebody = (document.compatMode &amp;&amp; document.compatMode !== &#39;BackCompat&#39;) ? document.documentElement : document.body;
+    return iebody.scrollTop;
+  }
+}
+return {
+  require: &#39;^?uiScrollfixTarget&#39;,
+  link: function (scope, elm, attrs, uiScrollfixTarget) {
+    var absolute = true,
+        shift = 0,
+        fixLimit,
+        $target = uiScrollfixTarget &amp;&amp; uiScrollfixTarget.$element || angular.element($window);
+
+    if (!attrs.uiScrollfix) {
+        absolute = false;
+    } else if (typeof(attrs.uiScrollfix) === &#39;string&#39;) {
+      // charAt is generally faster than indexOf: http://jsperf.com/indexof-vs-charat
+      if (attrs.uiScrollfix.charAt(0) === &#39;-&#39;) {
+        absolute = false;
+        shift = - parseFloat(attrs.uiScrollfix.substr(1));
+      } else if (attrs.uiScrollfix.charAt(0) === &#39;+&#39;) {
+        absolute = false;
+        shift = parseFloat(attrs.uiScrollfix.substr(1));
+      }
+    }
+
+    fixLimit = absolute ? attrs.uiScrollfix : elm[0].offsetTop + shift;
+
+    function onScroll() {
+
+      var limit = absolute ? attrs.uiScrollfix : elm[0].offsetTop + shift;
+
+      // if pageYOffset is defined use it, otherwise use other crap for IE
+      var offset = uiScrollfixTarget ? $target[0].scrollTop : getWindowScrollTop();
+      if (!elm.hasClass(&#39;ui-scrollfix&#39;) &amp;&amp; offset &gt; limit) {
+        elm.addClass(&#39;ui-scrollfix&#39;);
+        fixLimit = limit;
+      } else if (elm.hasClass(&#39;ui-scrollfix&#39;) &amp;&amp; offset &lt; fixLimit) {
+        elm.removeClass(&#39;ui-scrollfix&#39;);
+      }
+    }
+
+    $target.on(&#39;scroll&#39;, onScroll);
+
+    // Unbind scroll event handler when directive is removed
+    scope.$on(&#39;$destroy&#39;, function() {
+      $target.off(&#39;scroll&#39;, onScroll);
+    });
+  }
+};</pre>
+
+<p>}]).directive(&#39;uiScrollfixTarget&#39;, [function () {</p>
+
+<pre>&#39;use strict&#39;;
+return {
+  controller: [&#39;$element&#39;, function($element) {
+    this.$element = $element;
+  }]
+};</pre>
+
+<p>}]);</p>
+
+<p>/**</p>
+
+<pre class="ruby"> <span class="ruby-identifier">uiShow</span> <span class="ruby-constant">Directive</span>
+
+ <span class="ruby-constant">Adds</span> <span class="ruby-identifier">a</span> <span class="ruby-string">&#39;ui-show&#39;</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">element</span> <span class="ruby-identifier">instead</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">display</span><span class="ruby-operator">:</span><span class="ruby-identifier">block</span>
+ <span class="ruby-constant">Created</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">allow</span> <span class="ruby-identifier">tighter</span> <span class="ruby-identifier">control</span>  <span class="ruby-identifier">of</span> <span class="ruby-constant">CSS</span> <span class="ruby-identifier">without</span> <span class="ruby-identifier">bulkier</span> <span class="ruby-identifier">directives</span>
+
+ <span class="ruby-ivar">@param</span> <span class="ruby-identifier">expression</span> {<span class="ruby-identifier">boolean</span>} <span class="ruby-identifier">evaluated</span> <span class="ruby-identifier">expression</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">determine</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">the</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">should</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">added</span>
+<span class="ruby-regexp">/
+</span></pre>
+
+<p>angular.module(&#39;ui.showhide&#39;,[]) .directive(&#39;uiShow&#39;,
+[function () {</p>
+
+<pre>&#39;use strict&#39;;
+
+return function (scope, elm, attrs) {
+  scope.$watch(attrs.uiShow, function (newVal) {
+    if (newVal) {
+      elm.addClass(&#39;ui-show&#39;);
+    } else {
+      elm.removeClass(&#39;ui-show&#39;);
+    }
+  });
+};</pre>
+
+<p>}])</p>
+
+<p>/**</p>
+
+<pre class="ruby"> <span class="ruby-identifier">uiHide</span> <span class="ruby-constant">Directive</span>
+
+ <span class="ruby-constant">Adds</span> <span class="ruby-identifier">a</span> <span class="ruby-string">&#39;ui-hide&#39;</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">element</span> <span class="ruby-identifier">instead</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">display</span><span class="ruby-operator">:</span><span class="ruby-identifier">block</span>
+ <span class="ruby-constant">Created</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">allow</span> <span class="ruby-identifier">tighter</span> <span class="ruby-identifier">control</span>  <span class="ruby-identifier">of</span> <span class="ruby-constant">CSS</span> <span class="ruby-identifier">without</span> <span class="ruby-identifier">bulkier</span> <span class="ruby-identifier">directives</span>
+
+ <span class="ruby-ivar">@param</span> <span class="ruby-identifier">expression</span> {<span class="ruby-identifier">boolean</span>} <span class="ruby-identifier">evaluated</span> <span class="ruby-identifier">expression</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">determine</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">the</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">should</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">added</span>
+<span class="ruby-regexp">/
+</span></pre>
+
+<p>.directive(&#39;uiHide&#39;, [function () {</p>
+
+<pre>&#39;use strict&#39;;
+
+return function (scope, elm, attrs) {
+  scope.$watch(attrs.uiHide, function (newVal) {
+    if (newVal) {
+      elm.addClass(&#39;ui-hide&#39;);
+    } else {
+      elm.removeClass(&#39;ui-hide&#39;);
+    }
+  });
+};</pre>
+
+<p>}])</p>
+
+<p>/**</p>
+
+<pre class="ruby"> <span class="ruby-identifier">uiToggle</span> <span class="ruby-constant">Directive</span>
+
+ <span class="ruby-constant">Adds</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">class</span> <span class="ruby-string">&#39;ui-show&#39;</span> <span class="ruby-keyword">if</span> <span class="ruby-keyword">true</span>, <span class="ruby-keyword">and</span> <span class="ruby-identifier">a</span> <span class="ruby-string">&#39;ui-hide&#39;</span> <span class="ruby-keyword">if</span> <span class="ruby-keyword">false</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">element</span> <span class="ruby-identifier">instead</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">display</span><span class="ruby-operator">:</span><span class="ruby-identifier">block</span><span class="ruby-operator">/</span><span class="ruby-identifier">display</span>:<span class="ruby-identifier">none</span>
+ <span class="ruby-constant">Created</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">allow</span> <span class="ruby-identifier">tighter</span> <span class="ruby-identifier">control</span>  <span class="ruby-identifier">of</span> <span class="ruby-constant">CSS</span> <span class="ruby-identifier">without</span> <span class="ruby-identifier">bulkier</span> <span class="ruby-identifier">directives</span>. <span class="ruby-constant">This</span> <span class="ruby-identifier">also</span> <span class="ruby-identifier">allows</span> <span class="ruby-identifier">you</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">override</span> <span class="ruby-identifier">the</span>
+ <span class="ruby-identifier">default</span> <span class="ruby-identifier">visibility</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">element</span> <span class="ruby-identifier">using</span> <span class="ruby-identifier">either</span> <span class="ruby-identifier">class</span>.
+
+ <span class="ruby-ivar">@param</span> <span class="ruby-identifier">expression</span> {<span class="ruby-identifier">boolean</span>} <span class="ruby-identifier">evaluated</span> <span class="ruby-identifier">expression</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">determine</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">the</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">should</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">added</span>
+<span class="ruby-regexp">/
+</span></pre>
+
+<p>.directive(&#39;uiToggle&#39;, [function () {</p>
+
+<pre>&#39;use strict&#39;;
+
+return function (scope, elm, attrs) {
+  scope.$watch(attrs.uiToggle, function (newVal) {
+    if (newVal) {
+      elm.removeClass(&#39;ui-hide&#39;).addClass(&#39;ui-show&#39;);
+    } else {
+      elm.removeClass(&#39;ui-show&#39;).addClass(&#39;ui-hide&#39;);
+    }
+  });
+};</pre>
+
+<p>}]);</p>
+
+<p>/**</p>
+
+<pre>  Filters out all duplicate items from an array by checking the specified key
+  @param [key] {string} the name of the attribute of each object to compare for uniqueness
+if the key is empty, the entire object will be compared
+if the key === false then no filtering will be performed
+  @return {array}
+ /</pre>
+
+<p>angular.module(&#39;ui.unique&#39;,[]).filter(&#39;unique&#39;,
+[&#39;$parse&#39;, function ($parse) {</p>
+
+<pre>&#39;use strict&#39;;
+
+return function (items, filterOn) {
+
+  if (filterOn === false) {
+    return items;
+  }
+
+  if ((filterOn || angular.isUndefined(filterOn)) &amp;&amp; angular.isArray(items)) {
+    var newItems = [],
+      get = angular.isString(filterOn) ? $parse(filterOn) : function (item) { return item; };
+
+    var extractValueToCompare = function (item) {
+      return angular.isObject(item) ? get(item) : item;
+    };
+
+    angular.forEach(items, function (item) {
+      var isDuplicate = false;
+
+      for (var i = 0; i &lt; newItems.length; i++) {
+        if (angular.equals(extractValueToCompare(newItems[i]), extractValueToCompare(item))) {
+          isDuplicate = true;
+          break;
+        }
+      }
+      if (!isDuplicate) {
+        newItems.push(item);
+      }
+
+    });
+    items = newItems;
+  }
+  return items;
+};</pre>
+
+<p>}]);</p>
+
+<p>/*</p>
+
+<pre> Author: Remy Alain Ticona Carbajal http://realtica.org
+ Description: The main objective of ng-uploader is to have a user control,
+ clean, simple, customizable, and above all very easy to implement.
+ Licence: MIT
+/</pre>
+
+<p>angular.module(&#39;ui.uploader&#39;, []).service(&#39;uiUploader&#39;,
+uiUploader);</p>
+
+<p>uiUploader.$inject = [&#39;$log&#39;];</p>
+
+<p>function uiUploader($log) {</p>
+
+<pre>&#39;use strict&#39;;
+
+/*jshint validthis: true */
+var self = this;
+self.files = [];
+self.options = {};
+self.activeUploads = 0;
+$log.info(&#39;uiUploader loaded&#39;);
+
+function addFiles(files) {
+    for (var i = 0; i &lt; files.length; i++) {
+        self.files.push(files[i]);
+    }
+}
+
+function getFiles() {
+    return self.files;
+}
+
+function startUpload(options) {
+    self.options = options;
+    for (var i = 0; i &lt; self.files.length; i++) {
+        if (self.activeUploads == self.options.concurrency) {
+            break;
+        }
+        if (self.files[i].active)
+            continue;
+        ajaxUpload(self.files[i], self.options.url);
+    }
+}
+
+function removeFile(file){
+    self.files.splice(self.files.indexOf(file),1);
+}
+
+function removeAll(){
+    self.files.splice(0,self.files.length);
+}
+
+return {
+    addFiles: addFiles,
+    getFiles: getFiles,
+    files: self.files,
+    startUpload: startUpload,
+    removeFile: removeFile,
+    removeAll:removeAll
+};
+
+function getHumanSize(bytes) {
+    var sizes = [&#39;n/a&#39;, &#39;bytes&#39;, &#39;KiB&#39;, &#39;MiB&#39;, &#39;GiB&#39;, &#39;TB&#39;, &#39;PB&#39;, &#39;EiB&#39;, &#39;ZiB&#39;, &#39;YiB&#39;];
+    var i = +Math.floor(Math.log(bytes) / Math.log(1024));
+    return (bytes / Math.pow(1024, i)).toFixed(i ? 1 : 0) + &#39; &#39; + sizes[isNaN(bytes) ? 0 : i + 1];
+}
+
+function ajaxUpload(file, url) {
+    var xhr, formData, prop, data = &#39;&#39;,
+        key = &#39;&#39; || &#39;file&#39;;
+    self.activeUploads += 1;
+    file.active = true;
+    xhr = new window.XMLHttpRequest();
+    formData = new window.FormData();
+    xhr.open(&#39;POST&#39;, url);
+
+    // Triggered when upload starts:
+    xhr.upload.onloadstart = function() {};
+
+    // Triggered many times during upload:
+    xhr.upload.onprogress = function(event) {
+        if (!event.lengthComputable) {
+            return;
+        }
+        // Update file size because it might be bigger than reported by
+        // the fileSize:
+        //$log.info(&quot;progres..&quot;);
+        //console.info(event.loaded);
+        file.loaded = event.loaded;
+        file.humanSize = getHumanSize(event.loaded);
+        self.options.onProgress(file);
+    };
+
+    // Triggered when upload is completed:
+    xhr.onload = function() {
+        self.activeUploads -= 1;
+        startUpload(self.options);
+        self.options.onCompleted(file, xhr.responseText);
+    };
+
+    // Triggered when upload fails:
+    xhr.onerror = function() {};
+
+    // Append additional data if provided:
+    if (data) {
+        for (prop in data) {
+            if (data.hasOwnProperty(prop)) {
+                formData.append(prop, data[prop]);
+            }
+        }
+    }
+
+    // Append file data:
+    formData.append(key, file, file.name);
+
+    // Initiate upload:
+    xhr.send(formData);
+
+    return xhr;
+}</pre>
+
+<p>}</p>
+
+<p>/**</p>
+
+<pre> General-purpose validator for ngModel.
+ angular.js comes with several built-in validation mechanism for input fields (ngRequired, ngPattern etc.) but using
+ an arbitrary validation function requires creation of a custom formatters and / or parsers.
+ The ui-validate directive makes it easy to use any function(s) defined in scope as a validator function(s).
+ A validator function will trigger validation on both model and input changes.
+
+ @example &lt;input ui-validate=&quot; &#39;myValidatorFunction($value)&#39; &quot;&gt;
+ @example &lt;input ui-validate=&quot;{ foo : &#39;$value &gt; anotherModel&#39;, bar : &#39;validateFoo($value)&#39; }&quot;&gt;
+ @example &lt;input ui-validate=&quot;{ foo : &#39;$value &gt; anotherModel&#39; }&quot; ui-validate-watch=&quot; &#39;anotherModel&#39; &quot;&gt;
+ @example &lt;input ui-validate=&quot;{ foo : &#39;$value &gt; anotherModel&#39;, bar : &#39;validateFoo($value)&#39; }&quot; ui-validate-watch=&quot; { foo : &#39;anotherModel&#39; } &quot;&gt;
+
+ @param ui-validate {string|object literal} If strings is passed it should be a scope&#39;s function to be used as a validator.
+ If an object literal is passed a key denotes a validation error key while a value should be a validator function.
+ In both cases validator function should take a value to validate as its argument and should return true/false indicating a validation result.
+/</pre>
+
+<p>angular.module(&#39;ui.validate&#39;,[]).directive(&#39;uiValidate&#39;,
+function () {</p>
+
+<pre>&#39;use strict&#39;;
+
+return {
+  restrict: &#39;A&#39;,
+  require: &#39;ngModel&#39;,
+  link: function (scope, elm, attrs, ctrl) {
+    var validateFn, validators = {},
+        validateExpr = scope.$eval(attrs.uiValidate);
+
+    if (!validateExpr){ return;}
+
+    if (angular.isString(validateExpr)) {
+      validateExpr = { validator: validateExpr };
+    }
+
+    angular.forEach(validateExpr, function (exprssn, key) {
+      validateFn = function (valueToValidate) {
+        var expression = scope.$eval(exprssn, { &#39;$value&#39; : valueToValidate });
+        if (angular.isObject(expression) &amp;&amp; angular.isFunction(expression.then)) {
+          // expression is a promise
+          expression.then(function(){
+            ctrl.$setValidity(key, true);
+          }, function(){
+            ctrl.$setValidity(key, false);
+          });
+          return valueToValidate;
+        } else if (expression) {
+          // expression is true
+          ctrl.$setValidity(key, true);
+          return valueToValidate;
+        } else {
+          // expression is false
+          ctrl.$setValidity(key, false);
+          return valueToValidate;
+        }
+      };
+      validators[key] = validateFn;
+      ctrl.$formatters.push(validateFn);
+      ctrl.$parsers.push(validateFn);
+    });
+
+    function apply_watch(watch)
+    {
+        //string - update all validators on expression change
+        if (angular.isString(watch))
+        {
+            scope.$watch(watch, function(){
+                angular.forEach(validators, function(validatorFn){
+                    validatorFn(ctrl.$modelValue);
+                });
+            });
+            return;
+        }
+
+        //array - update all validators on change of any expression
+        if (angular.isArray(watch))
+        {
+            angular.forEach(watch, function(expression){
+                scope.$watch(expression, function()
+                {
+                    angular.forEach(validators, function(validatorFn){
+                        validatorFn(ctrl.$modelValue);
+                    });
+                });
+            });
+            return;
+        }
+
+        //object - update appropriate validator
+        if (angular.isObject(watch))
+        {
+            angular.forEach(watch, function(expression, validatorKey)
+            {
+                //value is string - look after one expression
+                if (angular.isString(expression))
+                {
+                    scope.$watch(expression, function(){
+                        validators[validatorKey](ctrl.$modelValue);
+                    });
+                }
+
+                //value is array - look after all expressions in array
+                if (angular.isArray(expression))
+                {
+                    angular.forEach(expression, function(intExpression)
+                    {
+                        scope.$watch(intExpression, function(){
+                            validators[validatorKey](ctrl.$modelValue);
+                        });
+                    });
+                }
+            });
+        }
+    }
+    // Support for ui-validate-watch
+    if (attrs.uiValidateWatch){
+        apply_watch( scope.$eval(attrs.uiValidateWatch) );
+    }
+  }
+};</pre>
+
+<p>});</p>
+
+<p>angular.module(&#39;ui.utils&#39;,  [</p>
+
+<pre>&#39;ui.event&#39;,
+&#39;ui.format&#39;,
+&#39;ui.highlight&#39;,
+&#39;ui.include&#39;,
+&#39;ui.indeterminate&#39;,
+&#39;ui.inflector&#39;,
+&#39;ui.jq&#39;,
+&#39;ui.keypress&#39;,
+&#39;ui.mask&#39;,
+&#39;ui.reset&#39;,
+&#39;ui.route&#39;,
+&#39;ui.scrollfix&#39;,
+&#39;ui.scroll&#39;,
+&#39;ui.scroll.jqlite&#39;,
+&#39;ui.showhide&#39;,
+&#39;ui.unique&#39;,
+&#39;ui.validate&#39;</pre>
+
+<p>]);</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

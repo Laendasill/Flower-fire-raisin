@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 boilerplate – all you really need…</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body id="home"  ng-app="myapp" ng-controller="FileInputController">
+
+  <h1>HTML5 boilerplate</h1>
+  <form action="localhost:8000/dire", method="get">
+    <input type="text" name="folder" value="">
+    <input type="submit" value="SelectFolder">
+  </form>
+
+  <form action="localhost:8000/pom", method="get">
+    md5:<br>
+    <input type="text" name="md5" value="Mickey">
+    <br>
+    Show Image?:<br>
+    <input type="checkbox" name="image" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

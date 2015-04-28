@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>module FileManager - RDoc Documentation</title>
+
+<link href="./fonts.css" rel="stylesheet">
+<link href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/search_index.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/searcher.js"></script>
+<script src="./js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="module">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-display_folders">#display_folders</a>
+    
+    <li ><a href="#method-i-get_folders">#get_folders</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="module-FileManager">
+  <h1 id="module-FileManager" class="module">
+    module FileManager
+  </h1>
+
+  <section class="description">
+    
+<p><a href="FileManager.html">FileManager</a> - module for more efficient
+folder operations</p>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-display_folders" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">display_folders</span><span
+            class="method-args">(options = {} )</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="FileManager.html#method-i-display_folders">#display_folders</a>
+function for displaying folders in FOLDER using hash parameters for
+displaying folders, files, symbolic links ets. currently implemented:</p>
+<ul><li>
+<p>:folders - display only folders</p>
+</li><li>
+<p>:files - display only files</p>
+</li><li>
+<p>:fullpath - display absolute_path</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="display_folders-source">
+            <pre><span class="ruby-comment"># File FileManager.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">display_folders</span>(<span class="ruby-identifier">options</span> = {} )
+
+  <span class="ruby-identifier">@@FOLDER</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:folders</span>]
+
+      <span class="ruby-keyword">next</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-identifier">f</span>)
+
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:files</span>]
+      <span class="ruby-keyword">next</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">file?</span>(<span class="ruby-identifier">f</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:fullpath</span>]
+      <span class="ruby-identifier">puts</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">absolute_path</span>(<span class="ruby-identifier">f</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-identifier">f</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_folders" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_folders</span><span
+            class="method-args">(path = ".")</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="FileManager.html#method-i-get_folders">#get_folders</a>  function
+using Dir.glob * std function for populating FOLDER constant first it
+clears @@FOLDER and then itertes over files in current folder. if path path
+is diffrent than default funcion will first use Dir.chdir to that directory</p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_folders-source">
+            <pre><span class="ruby-comment"># File FileManager.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_folders</span>(<span class="ruby-identifier">path</span> = <span class="ruby-string">&quot;.&quot;</span>)
+  <span class="ruby-identifier">@@FOLDER</span>.<span class="ruby-identifier">clear</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">absolute_path</span>(<span class="ruby-identifier">path</span>) <span class="ruby-operator">==</span> <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">pwd</span>
+    <span class="ruby-identifier">populate_folders</span>()
+  <span class="ruby-keyword">elsif</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-identifier">path</span>)
+    <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">chdir</span> <span class="ruby-identifier">path</span>
+    <span class="ruby-identifier">populate_folders</span>()
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-string">&quot;Path is not a folder&quot;</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">IOError</span>
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
