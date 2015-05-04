@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML5 boilerplate – all you really need…</title>
   <link rel="stylesheet" href="css/style.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,10 +14,17 @@
 <body id="home"  ng-app="myapp" ng-controller="FileInputController">
 
   <h1>HTML5 boilerplate</h1>
-  <form action="localhost:8000/dire", method="get">
-    <input type="text" name="folder" value="">
+  <form action="localhost:8000/dire", method="get" target="_blank" id="dir_form">
+    <input type="text" name="folder" value="" id="folder_field">
     <input type="submit" value="SelectFolder">
   </form>
+  <div class = "folder_box" id="folder_box">
+	
+	  	  
+  </div>
+    
+    <input type="submit" value="Get current folder" id="get_pwd">
+
 
   <form action="localhost:8000/pom", method="get">
     md5:<br>
@@ -28,6 +35,24 @@
     <br><br>
     <input type="submit" value="Submit">
   </form>
+<script>
+	$(document).ready(function (){ 
+	var host = window.location.origin  + "/";
+		var init = function init_f(){
+				$("#dir_form").attr("action", host + "dire" )
+		};
+		init();
+		var 
+			 folder_button = $("#get_pwd")
+			,folder_input = $("#folder_field")
+			,folder_submit = $("#dir_form");
 
+		folder_button.on('click', function(){
+			$.post( host + "dire", function( data ) {
+			  folder_input.attr("value", data) ;
+			});
+		});
+	});
+</script>
 </body>
 </html>
